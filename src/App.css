@@ -1,0 +1,798 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header{ 
+  width: 100%;  
+  height: 10rem;
+  background-color: lightgreen;
+  /* z-index: 3;   */
+}
+.header-main{
+  padding: 0 5%;
+  position: fixed;
+  background-color: lightgreen;
+  z-index: 1; 
+}
+.nav-bar{
+  padding: 1rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center; 
+  
+}
+.link{
+  text-decoration: none;
+  font-size: 1.3rem;
+  
+}
+.li{
+  list-style-type: none;
+}
+.nav-main-bar{
+  padding: 1rem 0;
+  /* background-color: greenyellow; */
+  display: flex;
+  /* column-gap: 1rem; */
+
+}
+.nav-main-bar>li{
+  width: 8%;
+  list-style-type: none;
+}
+
+.logo{
+  font-size: 1.5rem;
+}
+.nav-icon{
+  width: 15%;
+}
+.nav-icon-tour{
+  width: 15%;
+}
+
+.nav-bar-list{
+  /* margin-right: 5%; */
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+
+  list-style-type: none;
+
+
+}
+.nav-bar-list> li{
+  font-size: 1.3rem;
+  font-weight: 300;
+  
+}
+.nav-bar-list> li:hover{
+  background-color: rgb(234, 206, 206);
+  transform: scale(1.1);
+}.login{
+  /* width: 3%; */
+}
+
+.banner{
+  margin: 0 0 2rem 0;
+  width: 100%;
+  /* background-color: Green; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.banner-firm{ 
+  width: 90%; 
+  position: relative; 
+  margin-bottom: 3rem;
+}
+.banner.div{
+  width: 200%;
+  background-color: red;
+  padding: 20px;
+  
+}
+.banner-pre-next{
+  width: 200%;
+  background-color: green;
+  padding: 20px;
+}
+
+.banner-slid{
+  width: 100%; 
+  
+
+}
+.banner-slid>h3{
+  width: max-content;
+  background-color:lightgreen;
+  color:blue;
+  font-size: 1.3rem;
+}
+
+
+.btnicon{
+  padding: .7rem;
+  background-color: rgba(119, 10, 10, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.button-pre-next{
+  width: 100%;
+  padding: 10px 10px;
+  position: absolute;
+  top:35%;
+  background-color: rgb(109, 128, 0);
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.btnicon:hover{
+  background-color: rgba(0, 0, 0, 1);
+  
+}
+.banner-image{
+  width: 100%;
+  height: 450px;
+ 
+}
+
+
+
+.icon-pre-next{
+  font-size: 2rem;
+  /* font-weight: 500; */
+  color:white;
+}
+
+.image-title{
+  font-size: 1.5rem;
+  width: max-content;
+  background-color: rgb(212, 222, 212);
+  display: flex;
+}
+.image-title:hover{
+  transform: scale(1.1);
+}
+
+/* Torus and Trekking Middle Bar */
+.middlebar-section{
+ 
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.middlebar{
+  margin: 0 4rem 0 2rem;
+  width: 100%;
+  /* background-color: lightgreen; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+  
+}
+
+.tours-title , .treking-title, .booking  {
+  padding: .5rem;
+  background-color: lightgreen;
+  border: 1px solid lightgreen;
+  border-radius: .5rem;
+  
+}
+.middle-link{
+ text-decoration: none;  
+}
+
+.middlebtn:hover, .middlebtn:active{
+  background-color: rosybrown;
+}
+
+
+/* Treking */
+.tours{  
+  padding: 0 5% ;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: rgb(239, 236, 236); */
+
+}
+
+.treking-main{
+  padding: 0 5%;
+  width: 100%;
+  /* background-color: greenyellow; */
+}
+.treking-main>h3{
+  width: max-content;
+  /* margin-left: 1%; */
+  background-color: lightgreen;
+  color: royalblue;
+  font-size: 1.3rem;
+}
+.treking{ 
+  width: 100%;
+  display: flex; 
+  justify-content: center; 
+  /* background-color: rgb(239, 236, 236); */
+  position: relative;
+  
+}
+.treking-div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;}
+.button-pre-next-treking{
+  padding: 0 1rem 0 ;
+  width: 99%;  
+  position: absolute;
+  top:35%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.btnicon{
+  width: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  color: aliceblue;
+  
+}
+
+
+ .tourpakage{
+  width: 23%;
+  border: 1px solid rgb(215, 211, 207);
+  border-radius: .5rem;
+
+}
+.trekingpakage{
+  padding: .5rem;
+  width: 23%;
+  border: 1px solid rgb(215, 211, 207);
+  border-radius: .5rem;
+  /* background-color: green; */
+  cursor: pointer;
+
+}
+
+.treking-image-div{
+  /* display: flex;
+  justify-content: center; */
+}
+.treking-image, .tour-image{
+  width: 100%;
+ 
+}
+
+/* .treking-image:hover{
+  transform: scale(1.3);
+} */
+
+.tour-image:hover{
+  transform: scale(1.3)
+}
+/* Booking Component */
+
+.booking-main{
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  background-color: rgb(196, 222, 196);
+}
+
+.slider-bar{
+  display: flex;
+  justify-content: center;
+}
+
+.main-slider{
+  margin-left: 3rem;
+  width: 90%;
+  background-color: lightgray;
+
+ 
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+}
+.slider{
+ 
+  background-color: greenyellow;
+  padding: 3rem;
+}
+
+.statevariable{
+  padding: 3rem;
+  width: 100%;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-between;
+}
+.country{
+  background-color: lightgreen;
+  border: 1px solid green;
+}
+
+/* About US */
+.aboutus{
+ padding: 1rem 5% ;
+}
+.aboutus-detail{
+  padding: .5rem 0;
+}
+.aboutus-detail>ul{
+  padding: 0 .5rem;
+}
+/* Trip Information */
+.tripinfo-section{
+ 
+  width: 100%;
+  
+  background-color: yellow;
+}
+
+.tripinfo{
+  padding: .5rem 1%;  
+  background-color: lightcyan;
+  border: 1px solid lightgray;
+  border-radius: .3rem;
+  background-color: greenyellow;
+}
+.tripinfo-title>h3{
+  padding: 1rem 0;
+  font-size: 2rem;
+  color:black;
+  font-weight: 600;
+}
+.tripinfo-title>h5{
+  font-size: 1rem;
+  
+}
+.tripinfo-title>ul{
+  padding: .5rem 1rem;
+}
+
+.tripinfo-list{
+  padding: .5rem 5%;
+  background-color: lightgray;
+}
+.tripinfo-list-ul{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.tripinfo-list-link{
+  padding: .5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: max-content;
+  text-decoration: none;
+  /* background-color: green; */
+  border: 1px solid rgb(170, 157, 157);
+  border-radius: .5rem;
+ 
+
+}
+.tripinfo-list-link:hover{
+  background-color:black;
+  transition: 1s;
+  color: wheat;
+  font-size: 1.3rem;
+
+}
+
+
+/* OverView  */
+.overview-section{
+  padding: .5rem 1%;  
+  background-color: lightcyan;
+  border: 1px solid lightgray;
+  border-radius: .3rem;
+  
+  /* background-color: green; */
+}
+.overview-title{
+ /* font-size: 2rem; */
+}
+
+/* Itinerary */
+
+.itinerary-section{
+  padding: .5rem 1%;
+  background-color: lightcyan;
+  border: 1px solid lightgray;
+  border-radius: .3rem;
+  
+  /* background-color: green; */
+}
+.itinerary{
+  margin-bottom: .5rem;
+  display: flex;
+  column-gap: 3rem;
+  align-items: center;
+ 
+  /* background-color: yellow; */
+}
+
+.itinerary>h1{
+  padding: .2rem 1rem;
+  width: max-content;
+  background-color: lightgreen;
+  border: 1px solid lightblue;
+  border-radius: .3rem;
+}
+
+.itinerary-detail{
+  padding: .5rem 0;
+  border: .5px solid lightgray;
+  border-radius: .3rem;
+}
+
+/* Cost */
+.cost-section{
+  padding: .5rem 1%;
+  background-color: whitesmoke;
+  border: 1px solid lightgray;
+  border-radius: .3rem;
+}
+
+.table{
+  width: 100%;
+  /* background-color: lightpink; */
+  border-collapse: collapse;
+}
+
+th, td{
+  padding: .5rem;
+  border: 1px solid lightgray;
+  text-align: left;
+}
+
+
+/* State Variable test */
+
+.select-div{
+  padding: 1rem 5%;
+  width: 20%;
+  background-color: green;
+  cursor: pointer;
+}
+.select-image{
+  width: 100%;
+}
+
+Itinerary Data Display
+.tripinfo-dashboard{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/* Trekking Section Start Here */
+.trek-header{
+  padding: 1rem 0;
+  width: 100%;
+  /* background-color: red; */
+  display: flex; 
+  justify-content: center;
+
+}
+
+.trek-header-section{
+  padding: 0 3%;
+  width: 100%;
+  /* background-color: red; */
+  display: flex; 
+  justify-content: center;
+
+}
+.trek-main{
+  width: 85%;
+  /* background-color: gray; */
+
+}
+.trek-title{
+  background-color:#63aee1;
+}
+.trek-image{
+  width: 100%;
+}
+.trek-image-banner{
+  width: 100%;
+  height:25rem;
+}
+
+.trek-itinerary{
+  /* padding: .5rem 1rem; */
+  width: 100%;
+  /* background-color: gray; */
+}
+.trek-itinerary-dashboard{
+  width: 100%;
+  background-color: lightgreen;
+  display: flex; 
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+.trek-dashboard-box{
+  width: 20%;
+  /* background-color: gray; */
+  display: flex;
+  column-gap: .5rem;
+  align-items: center;
+  padding: .5rem 0;
+}
+
+.trek-highlight{
+  padding: .5rem 0;
+  width: 100%;
+
+}
+.trek-highlight>ul>li{
+  padding-left: 1%;
+  list-style-type: none;
+
+}
+
+.trek-list-ul{
+  width: 100%;
+  background-color: lightpink;
+  display:flex;
+  justify-content: space-around;
+}
+.trek-list-ul>li{
+  list-style-type: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.trek-list-ul>li:hover{
+
+  border: 1px solid lightgray;
+  border-radius: .3rem;
+  background-color: lightgreen;
+
+
+}
+
+.outlet{
+  padding: 3rem;
+  width: 100%;
+  background-color: royalblue;
+}
+
+
+/* Trek Banner Right Side */
+
+.trek-banner-rightside{
+  width: 15%;
+  /* background-color:skyblue; */
+}
+.trek-banner-rightside-main{
+
+  background-color: whitesmoke;
+  text-align: center;
+  border: 1px solid lightgrey;
+  border-radius: .3rem;
+
+}
+.trek-banner-rightside-main>h4{
+  padding-bottom: 1rem;
+}
+.trek-banner-rightside-image{
+  height: 30%;
+  /* background-color: green; */
+  margin: 1rem 0;
+}
+.trek-banner-rightside-bookingimage{
+  width: 100%;
+  padding-top: 1.22rem;
+}
+
+.banner-booknow{
+  padding: .3rem .7rem;
+  margin: .5rem 0;
+  border-radius: .3rem;
+  background-color: yellowgreen;
+}
+.banner-booknow:hover{
+  background-color: skyblue;
+}
+
+
+/* Booking Form */
+
+.bookingform-section{ 
+  padding: .3rem 3%;
+  width: 100%;
+  /* background-color: yellowgreen; */
+}
+
+.bookingform-main{
+  
+  width: 70%;
+  /* height: 30rem; */
+  /* background-color: gray; */
+ 
+}
+.bookingform-title{
+  padding: .3rem .5rem;
+  background-color: rgba(0, 255, 0, .7);
+}
+
+.bookingform-data{
+  padding: 0 .5rem;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+.tripform{
+  display: flex;
+  flex-direction: column;
+
+}
+.formdivmargin{
+  margin-top: .9rem;
+}
+.tripname{
+  font-size: .9rem;
+}
+.inputheight{
+  height: 1.9rem;
+  text-indent: .2rem;
+  border: 1px solid black;
+  border-radius: .3rem;
+
+}
+
+.nameaddressphone{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.commonNEP{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.arrivaldeparture{
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.commonAD{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.nationality{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+ 
+ 
+}
+.additionalrequirement {
+  margin-bottom: .3rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.textareaAR{
+  font-size: 1rem;
+
+  padding: .3rem ;
+
+
+}
+
+.form-btn{
+  font-size: 1rem;
+  width: max-content;
+  padding: .3rem .5rem;
+  background-color:green;
+  border: 1px solid gray;
+  border-radius: .5rem;
+}
+.form-btn{
+  background-color: skyblue;
+}
+
+
+
+
+/* _________________________________________________ */
+
+/* Test React section- */
+
+.useeffect-header{
+
+  padding: .3rem 3%;
+  width: 100%;
+  background-color: lightgreen;
+  
+}
+.product{
+  padding: 1rem 2rem;
+  width: max-content;
+  margin: 5px;
+  background-color: yellowgreen;
+}
+
+/* Callback Section */
+.callback-header{
+  padding: .3rem 3%;
+  margin: 1rem 0;
+  width: 100%;
+  background-color: lightgreen;
+}
+
+/* Registration */
+
+.registration-header{
+  width: 100%;
+  /* background-color:lightgreen; */
+  
+}
+.registration-section{
+  width: 100%;
+  height: 100vh;
+  padding: .5rem 3%;
+  /* background-color: gray; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* align-items: flex-start; */
+ 
+}
+.registration-form{
+  padding: 5rem .5rem;
+  width: 20%;
+  /* height: 20rem; */
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+  background-color: greenyellow;
+}
+.input-form{
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: .3rem;
+}
+
+.registration-btn{
+  width: max-content;
+  padding: .3rem .5rem;
+  background-color: royalblue;
+  border: 1px solid royalblue;
+  border-radius: .3rem;
+
+}

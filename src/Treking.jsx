@@ -3,7 +3,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useContext } from "react";
-import { Link, Outlet } from "React-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 
 

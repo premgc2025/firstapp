@@ -1,4 +1,4 @@
-import { Link} from "React-router-dom";
+import { Link} from "react-router-dom";
 function Tours(){
     let products = [
         {name:"Bhumeshwori Temple", image:"/src/components/image/Bhumeshwori Temple.JPG", Duration:"3 Hours" ,Price:"$100"},

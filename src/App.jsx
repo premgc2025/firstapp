@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './App.css'
-import { BrowserRouter, Routes, Route } from "React-router-dom";
+import { BrowserRouter , Routes, Route} from "react-router-dom";
 import Banner from './components/Banner'
 import React from 'react';
 import Tours from './Tours';

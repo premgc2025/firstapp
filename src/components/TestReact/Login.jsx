@@ -1,5 +1,5 @@
 
-import {Link} from "React-router-dom";
+import {Link} from "react-router-dom";
 function Login(){
     return(
         <div className="registration-header">

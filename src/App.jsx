@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="trekNepal">
       <TheContext.Provider value={[valueContext, { setValueContext }]}>
-        <BrowserRouter>
+        <BrowserRouter basename="/firstapp/">
           <Header />
           <Routes>
 
@@ -90,7 +90,7 @@ function App() {
       
 
       <div className="img">
-        ima
+        
 
       </div>
       

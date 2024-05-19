@@ -4,10 +4,10 @@ function Header(){
     return(
         <div className="header">
             <div className="header-main">
-            <div className="nav-bar">
+            <div className="nav-bar-top">
                 <div className="logo">
                 <li class="li"> <Link to="/" class="link logo">Logo Here</Link></li>
-                    {/* <h3>Logo Here</h3> */}
+                   
                 </div>
                 <ul class="nav-bar-list">
                     
@@ -22,8 +22,8 @@ function Header(){
             </div>
             <ul className="nav-main-bar">
                     
-                    {/* <li> <Link class="link" to="/treking"><img class="nav-icon" src="/src/components/image/Trekking.png" alt="Trekking Image" /> Treking</Link></li> */}
-                    {/* <li> <Link class="link" to="/tours"><img class="nav-icon-tour" src="/src/components/image/Tour.png" alt="Tour Image" /> Tours</Link></li> */}
+                    <li> <Link class="link" to="/treking"><img class="nav-icon" src="./img/Trekking.png" alt="Trekking Image" /> Treking</Link></li>
+                    <li> <Link class="link" to="/tours"><img class="nav-icon-tour" src="./img/Tour.png" alt="Tour Image" /> Tours</Link></li>
                     <li> <Link class="link" to="/bookingform">Booking</Link></li>
 
             </ul>

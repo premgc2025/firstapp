@@ -15,12 +15,14 @@
   /* z-index: 3;   */
 }
 .header-main{
+ width: 100%;
   padding: 0 5%;
   position: fixed;
   background-color: lightgreen;
   z-index: 1; 
 }
-.nav-bar{
+.nav-bar-top{  
+
   padding: 1rem 0 0 0;
   display: flex;
   justify-content: space-between;

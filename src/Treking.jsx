@@ -13,19 +13,19 @@ function Treking() {
 
 
     let products = [
-        { name: "Mountain 12", image: "./public/img/Manasulu-image.webp", Duration: "15-Days", Price: "$1300", Description: "(September to November) (March to April)" },
+        { name: "Mountain 12", image: "./img/Manasulu-image.webp", Duration: "15-Days", Price: "$1300", Description: "(September to November) (March to April)" },
         { name: "Annapurna Himalaya", image: "./img/ABC Image.webp", Duration: "7-Days", Price: "$1000", Description: "(September to November) (March to April)" },
         { name: "Everest Base Camp", image: "./img/Everest-BaseCam.jpeg", Duration: "15-Days", Price: "$1500", Description: "(September to November) (March to April)" },
         { name: "Macchapuchhre", image: "./img/Macchapuchhre.jpeg", Duration: "15-Days", Price: "$500", Description: "(September to November) (March to April)" },
         { name: "Manaslu", image: "./img/manaslu-1.jpeg", Duration: "15-Days", Price: "$1300", Description: "(September to November) (March to April)" },
         { name: "Mountain Nepal", image: "./img/Mountain-Nepal.jpeg", Duration: "10-Days", Price: "$1000", Description: "(September to November) (March to April)" },
-        { name: "Mountain 12", image: "./public/img/Manasulu-image.webp", Duration: "15-Days", Price: "$1300", Description: "(September to November) (March to April)" },
+        { name: "Mountain 12", image: "./img/Manasulu-image.webp", Duration: "15-Days", Price: "$1300", Description: "(September to November) (March to April)" },
         { name: "Annapurna Himalaya", image: "./img/ABC Image.webp", Duration: "7-Days", Price: "$1000", Description: "(September to November) (March to April)" },
         { name: "Everest Base Camp", image: "./img/Everest-BaseCam.jpeg", Duration: "15-Days", Price: "$1500", Description: "(September to November) (March to April)" },
         { name: "Macchapuchhre", image: "./img/Macchapuchhre.jpeg", Duration: "15-Days", Price: "$500", Description: "(September to November) (March to April)" },
         { name: "Manaslu", image: "./img/manaslu-1.jpeg", Duration: "15-Days", Price: "$1300", Description: "(September to November) (March to April)" },
         { name: "Mountain Nepal", image: "./img/Mountain-Nepal.jpeg", Duration: "10-Days", Price: "$1000", Description: "(September to November) (March to April)" },
-        { name: "Mountain 12", image: "./public/img/Manasulu-image.webp", Duration: "15-Days", Price: "$1300", Description: "(September to November) (March to April)" },
+        { name: "Mountain 12", image: "./img/Manasulu-image.webp", Duration: "15-Days", Price: "$1300", Description: "(September to November) (March to April)" },
         { name: "Annapurna Himalaya", image: "./img/ABC Image.webp", Duration: "7-Days", Price: "$1000", Description: "(September to November) (March to April)" },
         { name: "Everest Base Camp", image: "./img/Everest-BaseCam.jpeg", Duration: "15-Days", Price: "$1500", Description: "(September to November) (March to April)" },
         { name: "Macchapuchhre", image: "./img/Macchapuchhre.jpeg", Duration: "15-Days", Price: "$500", Description: "(September to November) (March to April)" },

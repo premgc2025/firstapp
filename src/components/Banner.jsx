@@ -10,14 +10,17 @@ import Treking from "../Treking";
 function Banner() {
 
     let products = [
-        { name: "Mountain 12", image: "/src/components/image/Manasulu-image.webp" },
-        { name: "Annapurna Himalaya", image: "/src/components/image/ABC -image2.jpeg" },
-        { name: "Everest Base Camp", image: "/src/components/image/Everest-BaseCam.jpeg" },
-        { name: "Macchapuchhre", image: "/src/components/image/Macchapuchhre.jpeg" },
-        { name: "Manaslu", image: "/src/components/image/manaslu-1.jpeg" },
-        { name: "Mountain Nepal", image: "/src/components/image/Mountain-Nepal.jpeg" },
-        { name: "Mountain 12", image: "/src/components/image/Manasulu-image.webp" },
-        { name: "Annanapurna Himalaya", image: "/src/components/image/ABC -image2.jpeg" },
+       
+  
+        { name: "Mountain 12", image: "./image/ABC.jpeg"},
+        { name: "Mountain 12", image: "./image/Everest-BaseCam.jpeg"},
+        { name: "Annapurna Himalaya", image: "./image/Everest-BaseCam.jpeg" },
+        // { name: "Everest Base Camp", image: "/src/components/image/Everest-BaseCam.jpeg" },
+        // { name: "Macchapuchhre", image: "/src/components/image/Macchapuchhre.jpeg" },
+        // { name: "Manaslu", image: "/src/components/image/manaslu-1.jpeg" },
+        // { name: "Mountain Nepal", image: "/src/components/image/Mountain-Nepal.jpeg" },
+        // { name: "Mountain 12", image: "/src/components/image/Manasulu-image.webp" },
+        // { name: "Annanapurna Himalaya", image: "/src/components/image/ABC -image2.jpeg" },
     ]
 
     const [currentImageIndex, setcurrentImageIndex] = useState(0)

@@ -1,6 +1,18 @@
 
 import {Link} from "react-router-dom";
+
 function Login(){
+
+    fetch('https://fakestoreapi.com/products')
+            .then(res=>res.json())
+            .then(data=> console.log(data)
+            
+            )
+
+            
+       
+
+    
     return(
         <div className="registration-header">
             <div className="registration-section">
@@ -15,6 +27,7 @@ function Login(){
                 </form>
                
             </div>
+          
         </div>
     )
 }

@@ -12,9 +12,9 @@ function Banner() {
     let products = [
        
   
-        { name: "Mountain 12", image: "./image/ABC.jpeg"},
-        { name: "Mountain 12", image: "./image/Everest-BaseCam.jpeg"},
-        { name: "Annapurna Himalaya", image: "./image/Everest-BaseCam.jpeg" },
+        { name: "Mountain 12", image: "./img/ABC.jpeg"},
+        { name: "Mountain 12", image: "./img/Everest-BaseCam.jpeg"},
+        { name: "Annapurna Himalaya", image: "./img/ABC Image.webp" },
         // { name: "Everest Base Camp", image: "/src/components/image/Everest-BaseCam.jpeg" },
         // { name: "Macchapuchhre", image: "/src/components/image/Macchapuchhre.jpeg" },
         // { name: "Manaslu", image: "/src/components/image/manaslu-1.jpeg" },
@@ -83,6 +83,9 @@ function Banner() {
 
     return (
         <div className="banner">
+        <div className="image-test">
+            <img src="img/ABC.jpeg" alt="" />
+        </div>
             <div className="banner-firm">
           
 

@@ -22,7 +22,7 @@ function Everest() {
                 <div className="trek-title">
                     <h1>Everest Base Camp Trek | 14-Day</h1>
                     <div className="trek-image">
-                        <img class="trek-image-banner" src="/src/components/image/Everest-BaseCam.jpeg" alt="EBC Image" />
+                        <img class="trek-image-banner" src="./img/Everest-BaseCam.jpeg" alt="EBC Image" />
                     </div>
                 </div>
                 <div className="trek-itinerary">
@@ -155,7 +155,7 @@ function Everest() {
 
                 <div className="trek-banner-rightside-main">
                     <div className="trek-banner-rightside-image">
-                        <img class="trek-banner-rightside-bookingimage" src="/src/components/image/Everest-BaseCam.jpeg" alt="EBC Image" />
+                        <img class="trek-banner-rightside-bookingimage" src="./img/Everest-BaseCam.jpeg" alt="EBC Image" />
 
                     </div>
                     <h4 >Everest Base Camp Trek</h4>

@@ -3,7 +3,7 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useContext } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate} from "react-router-dom";
 
 
 
@@ -60,7 +60,7 @@ function Treking() {
         }
 
     ])
-
+     let navigate = useNavigate();
 
     function loadItinerary(id) {
 
@@ -68,7 +68,11 @@ function Treking() {
         }
 
         else if (products[2].name === id) {
-            window.location.href = '/everest';
+
+            navigate("/everest")
+            // <everest/>
+            // window.location.href = '/everest';
+            // hfer= '/everest'
 
         }
         else if (products[3].name === id) {

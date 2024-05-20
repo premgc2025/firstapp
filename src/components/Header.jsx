@@ -22,8 +22,8 @@ function Header(){
             </div>
             <ul className="nav-main-bar">
                     
-                    <li> <Link class="link" to="/treking"><img class="nav-icon" src="./img/Trekking.png" alt="Trekking Image" /> Treking</Link></li>
-                    <li> <Link class="link" to="/tours"><img class="nav-icon-tour" src="./img/Tour.png" alt="Tour Image" /> Tours</Link></li>
+                    <li> <Link class="link" to="/treking"><img class="nav-icon" src={`${import.meta.env.BASE_URL}img/Trekking.png`} alt="Trekking Image" /> Treking</Link></li>
+                    <li> <Link class="link" to="/tours"><img class="nav-icon-tour" src={`${import.meta.env.BASE_URL}img/Tour.png`} alt="Tour Image" /> Tours</Link></li>
                     <li> <Link class="link" to="/bookingform">Booking</Link></li>
 
             </ul>

@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
+function Annapurna() {
 
-
-
-function Everest() {
-
-
+    // Template for Trip Details
     let [tripdetails, setTripdetails] = useState([
         {
             duration: "14 Days", activities: "Treking/Hiking", meals: "Breakfast, Lunch & Dinner",
-            bestseasion: "March-May & Sept- Nov", maxaltitude: "5364m", difficultlevel: "Advance",
-            groupsize: "2-15 persons", accomodation: "Hotel and Tea Houses", destination: "Nepal"
+            bestseasion: "Feb-May & Sept- Dec", maxaltitude: "4130m", difficultlevel: "Modrate",
+            groupsize: "2-10 persons", accomodation: "Hotel and Tea Houses", destination: "Nepal"
         }
 
     ])
@@ -20,9 +17,9 @@ function Everest() {
             <div className="trek-main">
 
                 <div className="trek-title">
-                    <h1>Everest Base Camp Trek | 14-Days</h1>
+                    <h1>Annapurna Base Camp Trek | 14-Days</h1>
                     <div className="trek-image">
-                        <img class="trek-image-banner" src={`${import.meta.env.BASE_URL}img/Everest-BaseCam.jpeg`} alt="EBC Image" />
+                        <img class="trek-image-banner" src={`${import.meta.env.BASE_URL}img/ABC.jpeg`} alt="EBC Image" />
                     </div>
                 </div>
                 <div className="trek-itinerary">
@@ -122,8 +119,8 @@ function Everest() {
                     <ul>
                         <h3>Trip Highlights</h3>
 
-                        <li><h4>&#10171; Trek through the Sagarmatha National Park.</h4></li>                        
-                        <li><h4>&#10171; Trained and experienced guide and porters.</h4></li>                  
+                        <li><h4>&#10171; Trek through the Sagarmatha National Park.</h4></li>
+                        <li><h4>&#10171; Trained and experienced guide and porters.</h4></li>
                         <li><h4>&#10171; Everest view from the Everest Base Camp.</h4></li>
                         <li><h4>&#10171; Trekking with minimum impact in the local environment.</h4></li>
                         <li><h4>&#10171; Maximum flexibility in itinerary, route with personalized service.</h4></li>
@@ -135,11 +132,11 @@ function Everest() {
                     <div className="trek-list">
 
                         <ul className="trek-list-ul">
-                            <li><Link to="/everest" className="trek-list-link">Overview</Link></li>
-                            <li><Link to="/everest/everestitinerary" className="trek-list-link">Itenerary</Link></li>
-                            <li><Link to="/everest/everestcost" className="trek-list-link">Cost</Link></li>
-                            <li><Link to="/everest/everesthotel" className="trek-list-link">Hotel</Link></li>
-                            <li><Link to="/everest/everestvehicles" className="trek-list-link">Vehicles</Link></li>
+                            <li><Link to="/treking" className="trek-list-link">Overview</Link></li>
+                            <li><Link to="/treking/itinerary" className="trek-list-link">Itinerary</Link></li>
+                            <li><Link to="/treking/cost" className="trek-list-link">Cost</Link></li>
+                            <li><Link to="/treking/hotels" className="trek-list-link">Hotel</Link></li>
+                            <li><Link to="/treking/vehicles" className="trek-list-link">Vehicles</Link></li>
 
                         </ul>
 
@@ -158,13 +155,13 @@ function Everest() {
 
                 <div className="trek-banner-rightside-main">
                     <div className="trek-banner-rightside-image">
-                        <img class="trek-banner-rightside-bookingimage" src= {`${import.meta.env.BASE_URL}img/Everest-BaseCam.jpeg`}alt="EBC Image" />
+                        <img class="trek-banner-rightside-bookingimage" src={`${import.meta.env.BASE_URL}img/ABC.jpeg`} alt="EBC Image" />
 
                     </div>
-                    <h4 >Everest Base Camp Trek</h4>
+                    <h4 >Annapurna Base Camp Trek</h4>
                     <p>13 Nights/14 days</p>
                     <p>Starting Form</p>
-                    <p>&#36;1150</p>
+                    <p>&#36;1000</p>
                     <p>Per Person</p>
 
                     <button class="banner-booknow" ><Link to="/bookingform"> Book Now</Link></button>
@@ -182,4 +179,4 @@ function Everest() {
         </div>
     )
 }
-export default Everest;
+export default Annapurna;

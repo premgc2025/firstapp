@@ -1,5 +1,6 @@
 
-function EverestVehicles(){
+
+function LangtangVehicles(){
     // note , vt= "Vehicle Type"
     let vehicles = [
         { persons: "2-3 Persons",  vt: " Car" },
@@ -34,4 +35,5 @@ function EverestVehicles(){
         </div>
     )
 }
-export default EverestVehicles;
+
+export default LangtangVehicles;

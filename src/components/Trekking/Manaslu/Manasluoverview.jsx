@@ -1,6 +1,5 @@
 
-function EverestOverview(){
-
+function Manasluoverview(){
     return (
         <div className="overview-section">
             <div className="overview">
@@ -31,4 +30,4 @@ function EverestOverview(){
         </div>
     )
 }
-export default EverestOverview;
+export default Manasluoverview;

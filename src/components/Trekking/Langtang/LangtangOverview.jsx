@@ -1,5 +1,6 @@
 
-function EverestOverview(){
+
+function LangtangOverview(){
 
     return (
         <div className="overview-section">
@@ -31,4 +32,4 @@ function EverestOverview(){
         </div>
     )
 }
-export default EverestOverview;
+export default LangtangOverview;

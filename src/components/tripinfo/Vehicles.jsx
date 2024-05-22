@@ -9,9 +9,9 @@ function Vehicles() {
     return (
         <div className="cost-section">
             <div className="cost">
-                <table class="table">
+                <table className="table">
                     <thead>
-                        <tr>
+                        <tr className="table-header">
                             <th>No. of Passengers</th>
                             <th>Vehicle Type(A/C)</th>
                            

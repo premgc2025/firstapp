@@ -13,18 +13,16 @@ function Treking() {
 
 
     let products = [
-        { name: "Mountain 12", image:`${import.meta.env.BASE_URL}img/Manasulu-image.webp`, Duration: "15-Days", Price: "$1300", Description: "(September to November) (March to April)" },
-        { name: "Annapurna Himalaya", image: `${import.meta.env.BASE_URL}img/ABC Image.webp`, Duration: "7-Days", Price: "$1000", Description: "(September to November) (March to April)" },
-        { name: "Everest Base Camp", image: `${import.meta.env.BASE_URL}img/Everest-BaseCam.jpeg`, Duration: "15-Days", Price: "$1500", Description: "(September to November) (March to April)" },
-        { name: "Macchapuchhre", image: `${import.meta.env.BASE_URL}img/Macchapuchhre.jpeg`, Duration: "15-Days", Price: "$500", Description: "(September to November) (March to April)" },
-        { name: "Manaslu", image: `${import.meta.env.BASE_URL}img/manaslu-1.jpeg`, Duration: "15-Days", Price: "$1300", Description: "(September to November) (March to April)" },
-        { name: "Mountain Nepal", image: `${import.meta.env.BASE_URL}img/Mountain-Nepal.jpeg`, Duration: "10-Days", Price: "$1000", Description: "(September to November) (March to April)" },
-        { name: "Mountain 12", image: `${import.meta.env.BASE_URL}img/Manasulu-image.webp`, Duration: "15-Days", Price: "$1300", Description: "(September to November) (March to April)" },
-        { name: "Annapurna Himalaya", image:`${import.meta.env.BASE_URL}img/ABC Image.webp`, Duration: "7-Days", Price: "$1000", Description: "(September to November) (March to April)" },
-        { name: "Everest Base Camp", image:`${import.meta.env.BASE_URL}img/Everest-BaseCam.jpeg`, Duration: "15-Days", Price: "$1500", Description: "(September to November) (March to April)" },
-        { name: "Macchapuchhre", image:`${import.meta.env.BASE_URL}img/Macchapuchhre.jpeg`, Duration: "15-Days", Price: "$500", Description: "(September to November) (March to April)" },
-        { name: "Manaslu", image: `${import.meta.env.BASE_URL}img/manaslu-1.jpeg`, Duration: "15-Days", Price: "$1300", Description: "(September to November) (March to April)" },
-        { name: "Mountain Nepal", image: `${import.meta.env.BASE_URL}img/Mountain-Nepal.jpeg`, Duration: "10-Days", Price: "$1000", Description: "(September to November) (March to April)" },
+        
+        { name: "Annapurna Himalaya", image: `${import.meta.env.BASE_URL}img/ABC Image.webp`, Duration: "14-Days", Price: "$1000", Description: "(September to November) (March to April) (Read More)" },
+        { name: "Everest Base Camp", image: `${import.meta.env.BASE_URL}img/Everest-BaseCam.jpeg`, Duration: "14-Days", Price: "$1500", Description: "(September to November) (March to April) (Read More)" },        
+        { name: "Manaslu", image: `${import.meta.env.BASE_URL}img/manaslu-1.jpeg`, Duration: "16-Days", Price: "$1399", Description: "(September to November) (March to April) (Read More)"},
+        { name: "Langtang", image: `${import.meta.env.BASE_URL}img/Langtang Valley.webp`, Duration: "9-Days", Price: "$1000", Description: "(September to November) (February to May) (Read More)" },
+        { name: "Mardi", image: `${import.meta.env.BASE_URL}img/Mardi.jpeg`, Duration: "14-Days", Price: "$1000", Description: "(September to November) (March to April) (Read More)" },
+        { name: "Everest Base Camp", image: `${import.meta.env.BASE_URL}img/Everest-BaseCam.jpeg`, Duration: "14-Days", Price: "$1500", Description: "(September to November) (March to April) (Read More)" },        
+        { name: "Manaslu", image: `${import.meta.env.BASE_URL}img/manaslu-1.jpeg`, Duration: "16-Days", Price: "$1399", Description: "(September to November) (March to April) (Read More)" },
+        { name: "Langtang", image: `${import.meta.env.BASE_URL}img/Langtang Valley.webp`, Duration: "9-Days", Price: "$1000", Description: "(September to November) (February to May) (Read More)" },
+        
     ]
     let slidNum = products.length;
 
@@ -48,7 +46,7 @@ function Treking() {
     // Template for Trip Details
     let [tripdetails, setTripdetails] = useState([
         {
-            duration: "14 Days", activities: "Treking/Hiking", meals: "Breakfast, Lunch & Dinne",
+            duration: "14 Days", activities: "Treking/Hiking", meals: "Breakfast, Lunch & Dinner",
             bestseasion: "Feb-May & Sept- Dec", maxaltitude: "4130m", difficultlevel: "Modrate",
             groupsize: "2-10 persons", accomodation: "Hotel and Tea Houses", destination: "Nepal"
         }
@@ -58,20 +56,23 @@ function Treking() {
 
     function loadItinerary(id) {
 
-        if (products[1].name === id) {
+        if (products[0].name === id) {
+            navigate("/annapurna")
         }
 
-        else if (products[2].name === id) {
+        else if (products[1].name === id) {
 
             navigate("/everest")
-            // <everest/>
-            // window.location.href = '/everest';
-            // hfer= '/everest'
+           
 
         }
-        else if (products[3].name === id) {
-            location.href = '/everest/everestoverview'
+        else if (products[2].name === id) {
+            navigate("/manaslu")
         }
+        else if (products[3].name === id) {
+            navigate("/langtang")
+        }
+
         else {
 
         }
@@ -136,7 +137,7 @@ function Treking() {
             <div className="trek-header">
                 <div className="trek-main">
 
-                    <div className="trek-title">
+                    <div className="trek-title trek-tilte-fontpage">
                         <h1>Annapurna Base Camp Trek | 14-Day</h1>
                     </div>
                     <div className="trek-itinerary">
@@ -237,11 +238,11 @@ function Treking() {
                         <h3>Trip Highlights</h3>
                       
                         
-                        <li><h4>-Experience the local village lifestyle. </h4></li>
-                        <li><h4>-Trained and experienced guide and porters.</h4></li>                        
-                        <li><h4>-Maximum flexibility in itinerary, route with personalized service.</h4></li> 
-                        <li><h4>-Enjoy 360-degree views of the Himalayas from the base camp.</h4></li>                                         
-                        <li><h4>-Explore the beautiful lake city of Pokhara during the trip.</h4></li>
+                        <li><h4>&#10171;  Experience the local village lifestyle. </h4></li>
+                        <li><h4>&#10171; Trained and experienced guide and porters.</h4></li>                        
+                        <li><h4>&#10171; Maximum flexibility in itinerary, route with personalized service.</h4></li> 
+                        <li><h4>&#10171; Enjoy 360-degree views of the Himalayas from the base camp.</h4></li>                                         
+                        <li><h4>&#10171; Explore the beautiful lake city of Pokhara during the trip.</h4></li>
 
                     </ul>
                 </div>
@@ -249,11 +250,11 @@ function Treking() {
                         <div className="trek-list">
 
                             <ul className="trek-list-ul">
-                                <li><Link to="/treking">Overview</Link></li>
-                                <li><Link to="/treking/itinerary">Itinerary</Link></li>
-                                <li><Link to="/treking/cost">Cost</Link></li>
-                                <li><Link to="/treking/hotels">Hotel</Link></li>
-                                <li><Link to="/treking/vehicles">Vehicles</Link></li>
+                                <li><Link to="/treking" className="trek-list-link">Overview</Link></li>
+                                <li><Link to="/treking/itinerary" className="trek-list-link">Itinerary</Link></li>
+                                <li><Link to="/treking/cost" className="trek-list-link">Cost</Link></li>
+                                <li><Link to="/treking/hotels" className="trek-list-link">Hotel</Link></li>
+                                <li><Link to="/treking/vehicles" className="trek-list-link">Vehicles</Link></li>
 
                             </ul>
 
@@ -268,7 +269,7 @@ function Treking() {
 
 
 
-                <div className="trek-banner-rightside">
+                <div className="trek-banner-rightside trek-banner-rightside-frontpage">
 
                     <div className="trek-banner-rightside-main">
                         <div className="trek-banner-rightside-image">
@@ -278,7 +279,7 @@ function Treking() {
                         <h4 >Annapurna Base Camp Trek</h4>
                         <p>13 Nights/14 days</p>
                         <p>Starting Form</p>
-                        <p> 1150USD</p>
+                        <p>&#36;1150</p>
                         <p>Per Person</p>
 
                         <button class="banner-booknow" ><Link to="/bookingform"> Book Now</Link></button>

@@ -1,7 +1,7 @@
 
-function EverestVehicles(){
-    // note , vt= "Vehicle Type"
-    let vehicles = [
+function Manasluvehicles(){
+     // note , vt= "Vehicle Type"
+     let vehicles = [
         { persons: "2-3 Persons",  vt: " Car" },
         { persons: "4-5 Persons",  vt: " Jeep/Van" },
         { persons: "6-12 Persons", vt: " Hiace Van" },
@@ -34,4 +34,4 @@ function EverestVehicles(){
         </div>
     )
 }
-export default EverestVehicles;
+export default Manasluvehicles;

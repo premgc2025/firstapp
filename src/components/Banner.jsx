@@ -12,14 +12,14 @@ function Banner() {
     let products = [
 
 
-        { name: "Mountain 12", image: "./img/ABC.jpeg" },
-        { name: "Mountain 12", image: "./img/Everest-BaseCam.jpeg" },
+        { name: "Annapurna Himalaya", image: "./img/ABC.jpeg" },
+        { name: "Everest", image: "./img/Everest-BaseCam.jpeg" },
         { name: "Annapurna Himalaya", image: "./img/ABC Image.webp" },
         { name: "Everest Base Camp", image: "./img/Everest-BaseCam.jpeg" },
-        { name: "Macchapuchhre", image: "./img/Macchapuchhre.jpeg" },
+        { name: "Machhapuchre", image: "./img/Mardi.jpeg" },
         { name: "Manaslu", image: "./img/manaslu-1.jpeg" },
         { name: "Mountain Nepal", image: "./img/Mountain-Nepal.jpeg" },
-        { name: "Mountain 12", image: "./img/Everest-BaseCam.jpeg" },
+        { name: "Langtang", image: "./img/Langtang Valley.webp" },      
         { name: "Annapurna Himalaya", image: "./img/ABC Image.webp" },
 
     ]

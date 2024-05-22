@@ -120,9 +120,9 @@ function BookingForm(){
 
                   
 <div className="change">
-               <h1>{details.name}</h1>
+               {/* <h1>{details.name}</h1>
                <h1>{details.email}</h1>
-               <h1>{details.additionalrequirement}</h1>
+               <h1>{details.additionalrequirement}</h1> */}
 
 </div>
                 </div>

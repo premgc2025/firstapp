@@ -1,5 +1,6 @@
 
-function EverestItinerary(){
+function LangtangItinerary(){
+
     return(
         <div className="itinerary-section">
             
@@ -179,4 +180,4 @@ function EverestItinerary(){
         </div>
     )
 }
-export default EverestItinerary;
+export default LangtangItinerary;

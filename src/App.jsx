@@ -25,6 +25,21 @@ import BookingForm from "./components/BookingForm";
 import CallBack from "./components/TestReact/CallBack";
 import Registration from "./components/TestReact/Registration";
 import Login from "./components/TestReact/Login";
+import Manaslu from "./components/Trekking/Manaslu";
+import Manasluoverview from "./components/Trekking/Manaslu/Manasluoverview";
+import Manasluitinerary from "./components/Trekking/Manaslu/Manasluitinerary";
+import Manaslucost from "./components/Trekking/Manaslu/Manaslucost";
+import Manasluhotel from "./components/Trekking/Manaslu/Manasluhotel";
+import Manasluvehicles from "./components/Trekking/Manaslu/Manasluvehicles";
+import Langtang from "./components/Trekking/Langtang";
+import LangtangOverview from "./components/Trekking/Langtang/LangtangOverview";
+import LangtangItinerary from "./components/Trekking/Langtang/LangtangItinerary";
+import LangtangCost from "./components/Trekking/Langtang/LangtangCost";
+import LangtangHotel from "./components/Trekking/Langtang/LangtangHotel";
+import LangtangVehicles from "./components/Trekking/Langtang/LangtangVehicles";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+import Annapurna from "./components/Trekking/Annapurna";
 
 
 export const TheContext = createContext();
@@ -64,30 +79,57 @@ function App() {
               <Route path="vehicles" element={<Vehicles />} />
 
             </Route>
-           
+
+            
             <Route path="/bookingform" element={<BookingForm />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/aboutus" element={<AboutUs />} />
+
+            <Route path="/annapurna" element={<Annapurna/>} />
+
             <Route path="/everest" element={<Everest />}>
-              <Route path="everestoverview" element={<EverestOverview />} />
+              <Route path="" element={<EverestOverview />} />
               <Route path="everestitinerary" element={<EverestItinerary />} />
               <Route path="everestcost" element={<EverestCost />} />
               <Route path="everesthotel" element={<EverestHotel />} />
               <Route path="everestvehicles" element={<EverestVehicles />} />
+            </Route>
+
+            <Route path="/langtang" element={<Langtang/>} >
+              <Route path="" element={<LangtangOverview/>}/>
+              <Route path="langtangitinerary" element={<LangtangItinerary/>} />
+              <Route path="langtangcost" element={<LangtangCost/>} />
+              <Route path="langtanghotel" element={<LangtangHotel/>} />
+              <Route path="langtangvehicles" element={<LangtangVehicles/>} />
+            </Route>
+
+            <Route path="/manaslu" element={<Manaslu/>}>
+              <Route path="" element={<Manasluoverview/>} />
+              <Route path="manasluitinerary" element={<Manasluitinerary/>} />
+              <Route path="manaslucost" element={<Manaslucost/>} />
+              <Route path="manasluhotel" element={<Manasluhotel/>} />
+              <Route path="manasluvehicles" element={<Manasluvehicles/>} />
+
 
             </Route>
+
+            <Route path="/services" element={<Services/>}/>
+            <Route path="/contact" element={<Contact/>}/>
             <Route path="/registration" element={<Registration/>}/>
             <Route path="/login" element={<Login/>}/>
             <Route path="/callback" element={<CallBack/>}/>
 
           </Routes>
 
+   
+        
         </BrowserRouter>
 
+     
       </TheContext.Provider>
       {/* <CallBack /> */}
+    
 
-      
 
       <div className="img">
         

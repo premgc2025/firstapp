@@ -1,8 +1,8 @@
-function Hotels() {
-    // note,    s ="Standard (2 Star)",        d = "Delux (3 Star)"" , p = "Premium (4 Star)""   , l = "Luxury (5 Star)""
-    let hotels = [
-        { city: "Kathmandu",  s:"Kathmandu Boutique or Similar", d: "Hotel Ambasdor or Similar",     p: "Kathmandu Guest House or Similar",   l: "Radission or Similar" },  
-        { city: "Pokhara",    s: "Hotel Hakoniwa or Similar",        d: "Himalayan Glory Inn or Similar ",       p: "Atithi Resort or Similar",     l: "Temple Tree Resort or Similar" },    
+
+function Manasluhotel(){
+     // note,    s ="Standard (2 Star)",        d = "Delux (3 Star)"" , p = "Premium (4 Star)""   , l = "Luxury (5 Star)""
+     let hotels = [
+        { city: "Kathmandu",  s:"Kathmandu Boutique or Similar", d: "Hotel Ambasdor or Similar",     p: "Kathmandu Guest House or Similar",   l: "Radission or Similar" },       
         { city: "During Trek",    s: " Tea House Lodges",    d: "Tea House Lodges", p: "Tea House Lodges", l: "Tea House Lodges" },
     ]
     return (
@@ -35,5 +35,6 @@ function Hotels() {
             </div>
         </div>
     )
+
 }
-export default Hotels;
+export default Manasluhotel;

@@ -11,16 +11,16 @@ function LangtangOverview(){
                 <div className="overview-title" >
 
                     <p>
-                    The Nepal Everest Base Camp trek is more than just a climb; it’s an expedition filled with resilience, captivating scenery, and stunning views. Located in the heart of the Khumbu region, this journey attracts global adventurers, all drawn to the base of Mount Everest, the apex of our planet. Ascending to a remarkable 5,364 meters.
+                    The Langtang region, located in the central Himalayas of Nepal, is renowned for its stunning natural beauty, rich cultural heritage, and relatively accessible trekking routes. This region, although less famous than Everest or Annapurna, offers a unique and serene experience that attracts trekkers seeking both adventure and a deep connection with nature.
                     </p> <br />              
                     
 
                   
 
-                    <p>We go on an exciting trek that includes climbing Kala Patthar to see panoramic views of Everest and other Himalayan peaks. Our Sherpa leads us to the base camp of Mount Everest, which is the tallest mountain in the world.</p><br />
+                    <p>Langtang lies to the north of the Kathmandu Valley, extending to the Tibetan border. The region is characterized by its dramatic landscape, featuring a mix of lush valleys, dense forests, high alpine meadows, and towering snow-capped peaks. The Langtang Lirung (7,227 meters) is the highest peak in the area, dominating the skyline with its imposing presence.</p><br />
 
                     <p>
-                    On this 14 days trekking period at Everest, every bend, and turn in the trail offers something new and amazing to see. The adrenaline rushes, challenges, and adventure, and if you want to create lasting memories by following in the footsteps of the legends? Then join Trekking Planner's custom-designed flexible itineraries and make history.
+                    The Langtang Valley, often referred to as the "Valley of Glaciers," is a highlight of the region. This glacial valley provides spectacular views of ice falls, and glacial moraines, and is surrounded by lofty mountains, making it a haven for trekkers and nature enthusiasts..
                     </p>
                    
 

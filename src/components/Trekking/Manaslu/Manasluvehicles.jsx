@@ -2,9 +2,8 @@
 function Manasluvehicles(){
      // note , vt= "Vehicle Type"
      let vehicles = [
-        { persons: "2-3 Persons",  vt: " Car" },
-        { persons: "4-5 Persons",  vt: " Jeep/Van" },
-        { persons: "6-12 Persons", vt: " Hiace Van" },
+        { persons: "4-6 Persons",  vt: " 4WD Jeep-One" },
+        { persons: "7-12 Persons", vt: "4WD Jeep-Two" },
     
     ]
     return (

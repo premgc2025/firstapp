@@ -1,9 +1,10 @@
 
-function Manaslucost(){
+
+function LumbiniCost(){
     // Note: gs=Group Size ,st =Standard Package, dp = Delux Package, sdp = Super Delux Package , lp = Luxury Package
  let costs = [
-    { gs: "Per Person", sp: " USD 2050", dp: "USD 2150", sdp: "USD 2250", lp: "2350" },
-    { gs: "Additional Night", sp: " USD 30", dp: "USD 40", sdp: "USD 50", lp: "100" },
+    { gs: "Per Person", sp: " USD 1000", dp: "USD 1100", sdp: "USD 1200", lp: "1300" },
+    { gs: "Additional Night", sp: " USD 25", dp: "USD 30", sdp: "USD 50", lp: "100" },
     { gs: "Taxes & Fees", sp: "Included", dp: "Included", sdp: "Included", lp: "Included" },
    
 ]
@@ -42,16 +43,12 @@ function Manaslucost(){
                             <div className="price-includes-ul">
                                 <ul>
                                     <li className="price-includes-li">&#9989; Airport pick up and transfer</li>
-                                    <li className="price-includes-li">&#9989; Three nights deluxe accommodation in Kathmandu with Breakfast.</li>
-                                    <li className="price-includes-li">&#9989; Kathmandu to Soti Khola and Dharapani to Kathmandu ground transportation by private jeep</li>
-                                    <li className="price-includes-li">&#9989; Meals (breakfast, lunch and dinner) with tea/coffee in each meal during the trek.</li>
-                                    <li className="price-includes-li">&#9989; Neat and Clean Mountain Accommodation at Tea House Lodges.</li>
-                                    <li className="price-includes-li">&#9989; Professional trekking guide, helpful and friendly guide, porters (2 trekkers = 1 porter).</li>
-                                    <li className="price-includes-li">&#9989; Manaslu Conservation Entry Permit and Restricted Area Permit.</li>
+                                    <li className="price-includes-li">&#9989; Private vehicle with A/C for all mentioned transfers and sightseeing.</li>
+                                    <li className="price-includes-li">&#9989; All hotel accommodations based on double sharing deluxe rooms.</li>
+                                    <li className="price-includes-li">&#9989; Daily Breakfast at the hotel in Kathmandu and Bhairahawa</li>
                                     <li className="price-includes-li">&#9989; Sleeping and duffel bags.</li>
                                     <li className="price-includes-li">&#9989; Government tax and office service charge.</li>
-                                    <li className="price-includes-li">&#9989; Medical first aid kit box.</li>
-                                 
+
                                 </ul>
                             </div>
 
@@ -62,13 +59,13 @@ function Manaslucost(){
                             <div className="price-excludes-ul">
                                 <ul>
                                     <li className="price-excludes-li"> &#10062; Personal expenses such as laundry, alcoholic beverages, bottled drinks.</li>                                   
-                                    <li className="price-excludes-li"> &#10062; Any meals in Kathmandu  other than breakfast.</li>
-                                    <li className="price-excludes-li"> &#10062; TPersonal Travel and Medical Insurance ( Mandatory) </li>
-                                    <li className="price-excludes-li"> &#10062; Extra night accommodation in Kathmandu  if any.</li>
+                                    <li className="price-excludes-li"> &#10062; Lunch and Dinner are excluded</li>
+                                    <li className="price-excludes-li"> &#10062; Travel insurance.</li>
+                                    <li className="price-excludes-li"> &#10062; Extra night accommodation if any.</li>
                                     <li className="price-excludes-li"> &#10062; Nepal visa.</li>
-                                    <li className="price-excludes-li"> &#10062; Optional activities cost.</li>
-                                    <li className="price-excludes-li"> &#10062; Hot water shower during the Trek..</li>
-                                    <li className="price-excludes-li"> &#10062; Staff Tipping.</li>
+                                    <li className="price-excludes-li"> &#10062; Entrance fees at the monuments during the sightseeing.</li>
+                                    <li className="price-excludes-li"> &#10062; Services that aren’t mentioned above.</li>
+                                    <li className="price-excludes-li"> &#10062; Any tips and donations.</li>
 
                                 </ul>
                             </div>
@@ -80,4 +77,4 @@ function Manaslucost(){
         </div>
     )
 }
-export default Manaslucost;
+export default LumbiniCost;

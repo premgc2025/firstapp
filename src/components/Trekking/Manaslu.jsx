@@ -160,7 +160,7 @@ function Manaslu(){
                     <h4 >Manaslu Circuit Trek </h4>
                     <p>15 Nights/16 days</p>
                     <p>Starting Form</p>
-                    <p>&#36;1150</p>
+                    <p>&#36;2050</p>
                     <p>Per Person</p>
 
                     <button class="banner-booknow" ><Link to="/bookingform"> Book Now</Link></button>

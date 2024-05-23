@@ -23,7 +23,7 @@ function Login(){
                     <input type="email" placeholder="Enter Your Email " name="email" className="input-form"/>
                     <input type="password" placeholder="Enter new Password " name="password" className="input-form" />
                  
-                    <p>No Account? <Link to="/registration">Registration</Link> </p>
+                    <p>No Account? <Link to="/registration" class="registration-link">Registration</Link> </p>
                 </form>
                
             </div>

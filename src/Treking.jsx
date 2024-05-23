@@ -14,14 +14,14 @@ function Treking() {
 
     let products = [
         
-        { name: "Annapurna Himalaya", image: `${import.meta.env.BASE_URL}img/ABC Image.webp`, Duration: "14-Days", Price: "$1000", Description: "(September to November) (March to April) (Read More)" },
-        { name: "Everest Base Camp", image: `${import.meta.env.BASE_URL}img/Everest-BaseCam.jpeg`, Duration: "14-Days", Price: "$1500", Description: "(September to November) (March to April) (Read More)" },        
-        { name: "Manaslu", image: `${import.meta.env.BASE_URL}img/manaslu-1.jpeg`, Duration: "16-Days", Price: "$1399", Description: "(September to November) (March to April) (Read More)"},
-        { name: "Langtang", image: `${import.meta.env.BASE_URL}img/Langtang Valley.webp`, Duration: "9-Days", Price: "$1000", Description: "(September to November) (February to May) (Read More)" },
-        { name: "Mardi", image: `${import.meta.env.BASE_URL}img/Mardi.jpeg`, Duration: "14-Days", Price: "$1000", Description: "(September to November) (March to April) (Read More)" },
-        { name: "Everest Base Camp", image: `${import.meta.env.BASE_URL}img/Everest-BaseCam.jpeg`, Duration: "14-Days", Price: "$1500", Description: "(September to November) (March to April) (Read More)" },        
-        { name: "Manaslu", image: `${import.meta.env.BASE_URL}img/manaslu-1.jpeg`, Duration: "16-Days", Price: "$1399", Description: "(September to November) (March to April) (Read More)" },
-        { name: "Langtang", image: `${import.meta.env.BASE_URL}img/Langtang Valley.webp`, Duration: "9-Days", Price: "$1000", Description: "(September to November) (February to May) (Read More)" },
+        { name: "Annapurna Himalaya", image: `${import.meta.env.BASE_URL}img/ABC Image.webp`, Duration: "14-Days", Price: "$1000", Description: "(September to November) (March to April)", Read:"(Read More)" },
+        { name: "Everest Base Camp", image: `${import.meta.env.BASE_URL}img/Everest-BaseCam.jpeg`, Duration: "14-Days", Price: "$1500", Description: "(September to November) (March to April)",Read:"(Read More)" },        
+        { name: "Manaslu", image: `${import.meta.env.BASE_URL}img/manaslu-1.jpeg`, Duration: "16-Days", Price: "$1399", Description: "(September to November) (March to April)",Read:"(Read More)"},
+        { name: "Langtang", image: `${import.meta.env.BASE_URL}img/Langtang Valley.webp`, Duration: "9-Days", Price: "$1000", Description: "(September to November) (February to May)",Read:"(Read More)"  },
+        { name: "Mardi", image: `${import.meta.env.BASE_URL}img/Mardi.jpeg`, Duration: "14-Days", Price: "$1000", Description: "(September to November) (March to April)",Read:"(Read More)" },
+        { name: "Everest Base Camp", image: `${import.meta.env.BASE_URL}img/Everest-BaseCam.jpeg`, Duration: "14-Days", Price: "$1500", Description: "(September to November) (March to April)",Read:"(Read More)" },        
+        { name: "Manaslu", image: `${import.meta.env.BASE_URL}img/manaslu-1.jpeg`, Duration: "16-Days", Price: "$1399", Description: "(March-June & Oct- Dec)",Read:"(Read More)"},
+        { name: "Langtang", image: `${import.meta.env.BASE_URL}img/Langtang Valley.webp`, Duration: "9-Days", Price: "$1000", Description: "(September to November) (February to May)",Read:"(Read More)"},
         
     ]
     let slidNum = products.length;
@@ -116,6 +116,7 @@ function Treking() {
                                 <h4>Duration: {product.Duration}</h4>
                                 <h4>Cost: {product.Price}</h4>
                                 <h4>Best Seasion: {product.Description}</h4>
+                                <h4 className="readmore">{product.Read}</h4>
 
                             </div>)
 
@@ -250,11 +251,11 @@ function Treking() {
                         <div className="trek-list">
 
                             <ul className="trek-list-ul">
-                                <li><Link to="/treking" className="trek-list-link">Overview</Link></li>
-                                <li><Link to="/treking/itinerary" className="trek-list-link">Itinerary</Link></li>
-                                <li><Link to="/treking/cost" className="trek-list-link">Cost</Link></li>
-                                <li><Link to="/treking/hotels" className="trek-list-link">Hotel</Link></li>
-                                <li><Link to="/treking/vehicles" className="trek-list-link">Vehicles</Link></li>
+                            <li><Link to="/annapurna/" className="trek-list-link">Overview</Link></li>
+                            <li><Link to="/annapurna/itinerary" className="trek-list-link">Itinerary</Link></li>
+                            <li><Link to="/annapurna/cost" className="trek-list-link">Cost</Link></li>
+                            <li><Link to="/annapurna/hotels" className="trek-list-link">Hotel</Link></li>
+                            <li><Link to="/annapurna/vehicles" className="trek-list-link">Vehicles</Link></li>
 
                             </ul>
 

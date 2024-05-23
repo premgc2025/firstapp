@@ -14,8 +14,9 @@ function Banner() {
 
         { name: "Annapurna Himalaya", image: "./img/ABC.jpeg" },
         { name: "Everest", image: "./img/Everest-BaseCam.jpeg" },
-        { name: "Annapurna Himalaya", image: "./img/ABC Image.webp" },
+        { name: "NamoBuddha", image: "./img/NamoBuddhabanner.jpeg" },
         { name: "Everest Base Camp", image: "./img/Everest-BaseCam.jpeg" },
+        { name: "Lumbini", image: "./img/LumbiniBanner.jpeg" },
         { name: "Machhapuchre", image: "./img/Mardi.jpeg" },
         { name: "Manaslu", image: "./img/manaslu-1.jpeg" },
         { name: "Mountain Nepal", image: "./img/Mountain-Nepal.jpeg" },

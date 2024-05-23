@@ -52,7 +52,7 @@ function Registration(){
                     <input type="number" placeholder="Enter Your Age " name="age"  className="input-form" onChange={handleInput} value={userDetails.age}/>
                 
                     <button className="registration-btn">Registration</button>
-                    <p>Already Registered ? <Link to="/login">Login</Link> </p>
+                    <p>Already Registered ? <Link to="/login" class="registration-link">Login</Link> </p>
                 </form>
                
             </div>

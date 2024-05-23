@@ -2,7 +2,7 @@
 function LangtangCost(){
     // Note: gs=Group Size ,st =Standard Package, dp = Delux Package, sdp = Super Delux Package , lp = Luxury Package
  let costs = [
-    { gs: "Per Person", sp: " USD 1399", dp: "USD 1500", sdp: "USD 1600", lp: "1700" },
+    { gs: "Per Person", sp: " USD 1000", dp: "USD 1050", sdp: "USD 1150", lp: "1200" },
     { gs: "Additional Night", sp: " USD 30", dp: "USD 40", sdp: "USD 50", lp: "100" },
     { gs: "Taxes & Fees", sp: "Included", dp: "Included", sdp: "Included", lp: "Included" },
    
@@ -43,7 +43,7 @@ function LangtangCost(){
                                 <ul>
                                     <li className="price-includes-li">&#9989; Airport pick up and transfer</li>
                                     <li className="price-includes-li">&#9989; Two Nights Accommodation in Kathmandu in 3-star Hotel (breakfast included).</li>
-                                    <li className="price-includes-li">&#9989; Kathmandu – Lukla – Kathmandu Domestic flight.</li>
+                                    <li className="price-includes-li">&#9989; Private vehicle for Syabrubesi drop and Pickup</li>
                                     <li className="price-includes-li">&#9989; Meals (breakfast, lunch and dinner) with tea/coffee in each meal during the trek.</li>
                                     <li className="price-includes-li">&#9989; Neat and Clean Mountain Accommodation at Tea House Lodges.</li>
                                     <li className="price-includes-li">&#9989; Professional trekking guide, helpful and friendly guide, porters (2 trekkers = 1 porter).</li>

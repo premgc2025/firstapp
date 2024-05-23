@@ -162,7 +162,7 @@ function Langtang(){
                     <h4 >langtang Base Camp Trek</h4>
                     <p>8 Nights/9 days</p>
                     <p>Starting Form</p>
-                    <p>&#36;1150</p>
+                    <p>&#36;1000</p>
                     <p>Per Person</p>
 
                     <button class="banner-booknow" ><Link to="/bookingform"> Book Now</Link></button>

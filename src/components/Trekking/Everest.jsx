@@ -135,7 +135,7 @@ function Everest() {
                     <div className="trek-list">
 
                         <ul className="trek-list-ul">
-                            <li><Link to="/everest" className="trek-list-link">Overview</Link></li>
+                            <li><Link to="/everest/" className="trek-list-link">Overview</Link></li>
                             <li><Link to="/everest/everestitinerary" className="trek-list-link">Itenerary</Link></li>
                             <li><Link to="/everest/everestcost" className="trek-list-link">Cost</Link></li>
                             <li><Link to="/everest/everesthotel" className="trek-list-link">Hotel</Link></li>

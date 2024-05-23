@@ -1,13 +1,14 @@
+
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-function Annapurna() {
+function Lumbini(){
 
-    // Template for Trip Details
+
     let [tripdetails, setTripdetails] = useState([
         {
-            duration: "14 Days", activities: "annapurna/Hiking", meals: "Breakfast, Lunch & Dinner",
-            bestseasion: "Feb-May & Sept- Dec", maxaltitude: "4130m", difficultlevel: "Modrate",
-            groupsize: "2-10 persons", accomodation: "Hotel and Tea Houses", destination: "Nepal"
+            duration: "6 Days", activities: "Tour", meals: "Breakfast",
+            bestseasion: "All Seasion", maxaltitude: "109m", difficultlevel: "Easy",
+            groupsize: "2-15 persons", accomodation: "Hotel/Resort", destination: "Lumbini, Nepal"
         }
 
     ])
@@ -17,9 +18,9 @@ function Annapurna() {
             <div className="trek-main">
 
                 <div className="trek-title">
-                    <h1>Annapurna Base Camp Trek | 14-Days</h1>
+                    <h1>Lumbini Tour Package | 6-Days</h1>
                     <div className="trek-image">
-                        <img class="trek-image-banner" src={`${import.meta.env.BASE_URL}img/ABC.jpeg`} alt="EBC Image" />
+                        <img class="trek-image-banner" src={`${import.meta.env.BASE_URL}img/LumbiniBanner.jpeg`} alt="EBC Image" />
                     </div>
                 </div>
                 <div className="trek-itinerary">
@@ -119,12 +120,10 @@ function Annapurna() {
                     <ul>
                         <h3>Trip Highlights</h3>
 
-                        <li><h4>&#10171; Trek through the Sagarmatha National Park.</h4></li>
-                        <li><h4>&#10171; Trained and experienced guide and porters.</h4></li>
-                        <li><h4>&#10171; Everest view from the Everest Base Camp.</h4></li>
-                        <li><h4>&#10171; Trekking with minimum impact in the local environment.</h4></li>
-                        <li><h4>&#10171; Maximum flexibility in itinerary, route with personalized service.</h4></li>
-                        <li><h4>&#10171; Experiencing the unique Sherpa culture and traditions of the Khumbu region.</h4></li>
+                        <li><h4>&#10171; Sightseeing of Buddhist Temple in Kathmandu.</h4></li>                        
+                        <li><h4>&#10171; Visit Kopan monasteries reflectiong Buddhist Culture.</h4></li>                  
+                        <li><h4>&#10171; Explore Lumbini, the birthplace of Buddha.</h4></li>
+                        
 
                     </ul>
                 </div>
@@ -132,11 +131,11 @@ function Annapurna() {
                     <div className="trek-list">
 
                         <ul className="trek-list-ul">
-                            <li><Link to="/annapurna/" className="trek-list-link">Overview</Link></li>
-                            <li><Link to="/annapurna/itinerary" className="trek-list-link">Itinerary</Link></li>
-                            <li><Link to="/annapurna/cost" className="trek-list-link">Cost</Link></li>
-                            <li><Link to="/annapurna/hotels" className="trek-list-link">Hotel</Link></li>
-                            <li><Link to="/annapurna/vehicles" className="trek-list-link">Vehicles</Link></li>
+                            <li><Link to="/lumbini/" className="trek-list-link">Overview</Link></li>
+                            <li><Link to="/lumbini/lumbiniitinerary" className="trek-list-link">Itenerary</Link></li>
+                            <li><Link to="/lumbini/lumbinicost" className="trek-list-link">Cost</Link></li>
+                            <li><Link to="/lumbini/lumbinihotel" className="trek-list-link">Hotel</Link></li>
+                            <li><Link to="/lumbini/lumbinivehicles" className="trek-list-link">Vehicles</Link></li>
 
                         </ul>
 
@@ -155,13 +154,13 @@ function Annapurna() {
 
                 <div className="trek-banner-rightside-main">
                     <div className="trek-banner-rightside-image">
-                        <img class="trek-banner-rightside-bookingimage" src={`${import.meta.env.BASE_URL}img/ABC.jpeg`} alt="EBC Image" />
+                        <img class="trek-banner-rightside-bookingimage" src= {`${import.meta.env.BASE_URL}img/Lumbini.jpeg`}alt="EBC Image" />
 
                     </div>
-                    <h4 >Annapurna Base Camp Trek</h4>
-                    <p>13 Nights/14 days</p>
+                    <h4 >lumbini Package Tour</h4>
+                    <p>6 days</p>
                     <p>Starting Form</p>
-                    <p>&#36;1000</p>
+                    <p>&#36;1150</p>
                     <p>Per Person</p>
 
                     <button class="banner-booknow" ><Link to="/bookingform"> Book Now</Link></button>
@@ -178,5 +177,6 @@ function Annapurna() {
             </div>
         </div>
     )
+    
 }
-export default Annapurna;
+export default Lumbini;

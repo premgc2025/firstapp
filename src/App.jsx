@@ -6,7 +6,6 @@ import { BrowserRouter , Routes, Route} from "react-router-dom";
 import Banner from './components/Banner'
 import React from 'react';
 import Tours from './Tours';
-import Booking from './components/Booking';
 import Treking from './Treking';
 import Header from './components/Header';
 import AboutUs from "./components/AboutUs";
@@ -22,7 +21,6 @@ import EverestCost from "./components/Trekking/Everest/EverestCost";
 import EverestHotel from "./components/Trekking/Everest/EverestHotel";
 import EverestVehicles from "./components/Trekking/Everest/EverestVehicles";
 import BookingForm from "./components/BookingForm";
-import CallBack from "./components/TestReact/CallBack";
 import Registration from "./components/TestReact/Registration";
 import Login from "./components/TestReact/Login";
 import Manaslu from "./components/Trekking/Manaslu";
@@ -40,6 +38,15 @@ import LangtangVehicles from "./components/Trekking/Langtang/LangtangVehicles";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Annapurna from "./components/Trekking/Annapurna";
+import Footer from "./components/Footer";
+import Lumbini from "./components/Tour/Lumbini";
+import LumbiniOverview from "./components/Tour/Lumbini/LumbiniOverview";
+import LumbiniItinerary from "./components/Tour/Lumbini/LumbiniItinerary";
+import LumbiniCost from "./components/Tour/Lumbini/LumbiniCost";
+import LumbiniHotel from "./components/Tour/Lumbini/LumbiniHotel";
+import LumbiniVehicles from "./components/Tour/Lumbini/LumbiniVehicles";
+import WhyChooseUs from "./components/WhyChooseUs";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 export const TheContext = createContext();
@@ -63,29 +70,30 @@ function App() {
     <div className="trekNepal">
       <TheContext.Provider value={[valueContext, { setValueContext }]}>
         <BrowserRouter basename="/firstapp/">
+          <ScrollToTop/>
           <Header />
           <Routes>
 
 
-            <Route path="/" element={<Banner />} />
+            <Route path="/" element={<Banner />} />     
+            <Route path="/treking" element={<Treking />}/>
+            <Route path="/tours" element={<Tours/>} />
+            <Route path="/bookingform" element={<BookingForm />} />           
+            <Route path="/aboutus" element={<AboutUs />} />
+            <Route path="/services" element={<Services/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/registration" element={<Registration/>}/>
+            <Route path="/login" element={<Login/>}/>
+          
             
-            <Route path="/tours" element={<Tours />} />
 
-            <Route path="/treking" element={<Treking />}>
+            <Route path="/annapurna" element={<Annapurna/>} >
               <Route path="" element={<Overview />} />
               <Route path="itinerary" element={<Itinerary />} />
               <Route path="cost" element={<Cost />} />
               <Route path="hotels" element={<Hotels />} />
               <Route path="vehicles" element={<Vehicles />} />
-
             </Route>
-
-            
-            <Route path="/bookingform" element={<BookingForm />} />
-            <Route path="/booking" element={<Booking />} />
-            <Route path="/aboutus" element={<AboutUs />} />
-
-            <Route path="/annapurna" element={<Annapurna/>} />
 
             <Route path="/everest" element={<Everest />}>
               <Route path="" element={<EverestOverview />} />
@@ -109,20 +117,22 @@ function App() {
               <Route path="manaslucost" element={<Manaslucost/>} />
               <Route path="manasluhotel" element={<Manasluhotel/>} />
               <Route path="manasluvehicles" element={<Manasluvehicles/>} />
-
-
             </Route>
 
-            <Route path="/services" element={<Services/>}/>
-            <Route path="/contact" element={<Contact/>}/>
-            <Route path="/registration" element={<Registration/>}/>
-            <Route path="/login" element={<Login/>}/>
-            <Route path="/callback" element={<CallBack/>}/>
+            <Route path="/lumbini" element={<Lumbini/>} >
+              <Route path="" element={<LumbiniOverview/>} />
+              <Route path="lumbiniitinerary" element={<LumbiniItinerary/>} />
+              <Route path="lumbinicost" element={<LumbiniCost/>} />
+              <Route path="lumbinihotel" element={<LumbiniHotel/>} />
+              <Route path="lumbinivehicles" element={<LumbiniVehicles/>} />
+            </Route>
+
+            <Route path="/footer" element={<Footer/>} />
 
           </Routes>
-
    
-        
+        <WhyChooseUs/>
+        <Footer/>
         </BrowserRouter>
 
      

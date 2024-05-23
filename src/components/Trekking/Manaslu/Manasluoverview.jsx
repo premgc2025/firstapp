@@ -9,16 +9,16 @@ function Manasluoverview(){
                 <div className="overview-title" >
 
                     <p>
-                    The Nepal Everest Base Camp trek is more than just a climb; it’s an expedition filled with resilience, captivating scenery, and stunning views. Located in the heart of the Khumbu region, this journey attracts global adventurers, all drawn to the base of Mount Everest, the apex of our planet. Ascending to a remarkable 5,364 meters.
+                    Manaslu, the eighth highest mountain in the world, stands tall at 8,163 meters (26,781 feet) in the west-central part of Nepal. The name "Manaslu" comes from the Sanskrit word "Manasa," meaning "intellect" or "soul," aptly reflecting the mountain’s grandeur and spiritual significance. Manaslu is part of the Mansiri Himal range in the Himalayas and offers one of the most captivating trekking experiences in Nepal, combining natural beauty, cultural heritage, and remote adventure.
                     </p> <br />              
                     
 
                   
 
-                    <p>We go on an exciting trek that includes climbing Kala Patthar to see panoramic views of Everest and other Himalayan peaks. Our Sherpa leads us to the base camp of Mount Everest, which is the tallest mountain in the world.</p><br />
+                    <p>Manaslu is located in the Gorkha District, about 64 kilometers (40 miles) east of Annapurna. The region around Manaslu is characterized by its varied topography, which includes steep ridges, deep valleys, glacial lakes, and towering peaks. The Manaslu Conservation Area (MCA) encompasses 1,663 square kilometers, protecting the unique biodiversity and culture of the region.</p><br />
 
                     <p>
-                    On this 14 days trekking period at Everest, every bend, and turn in the trail offers something new and amazing to see. The adrenaline rushes, challenges, and adventure, and if you want to create lasting memories by following in the footsteps of the legends? Then join Trekking Planner's custom-designed flexible itineraries and make history.
+                    The Manaslu Circuit Trek, one of the most popular trekking routes, circumnavigates the mountain, offering breathtaking views of Manaslu itself, along with other peaks like Himalchuli, Ganesh Himal, and Ngadi Chuli. The trek passes through diverse landscapes, from subtropical forests at lower elevations to alpine meadows and barren, rocky terrains closer to the passes.
                     </p>
                    
 

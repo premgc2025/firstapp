@@ -1,12 +1,13 @@
 
 
-function LangtangVehicles(){
+function LumbiniVehicles(){
+
     // note , vt= "Vehicle Type"
     let vehicles = [
-       
         { persons: "2-3 Persons",  vt: " Car" },
         { persons: "4-5 Persons",  vt: " Jeep/Van" },
         { persons: "6-12 Persons", vt: " Hiace Van" },
+        { persons: "13-20 Persons", vt: " Coster Bus / Mini Bus" },
     
     ]
     return (
@@ -36,5 +37,4 @@ function LangtangVehicles(){
         </div>
     )
 }
-
-export default LangtangVehicles;
+export default LumbiniVehicles;

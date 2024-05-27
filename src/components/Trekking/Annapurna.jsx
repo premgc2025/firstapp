@@ -1,6 +1,14 @@
 import React, { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet,useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
 function Annapurna() {
+    let location = useLocation()
+    useEffect(()=>{
+        console.log(location.pathname)
+    },[location])
+
+
 
     // Template for Trip Details
     let [tripdetails, setTripdetails] = useState([
@@ -19,7 +27,7 @@ function Annapurna() {
                 <div className="trek-title">
                     <h1>Annapurna Base Camp Trek | 14-Days</h1>
                     <div className="trek-image">
-                        <img class="trek-image-banner" src={`${import.meta.env.BASE_URL}img/ABC.jpeg`} alt="EBC Image" />
+                        <img className="trek-image-banner"  src={`${import.meta.env.BASE_URL}img/ABC.jpeg`} alt="EBC Image" />
                     </div>
                 </div>
                 <div className="trek-itinerary">
@@ -27,7 +35,7 @@ function Annapurna() {
 
                     <div className="trek-itinerary-dashboard">
                         <div className="trek-dashboard-box">
-                            <i class="fa-regular fa-clock"></i>
+                            <i className="fa-regular fa-clock"></i>
                             <div className="trek-box-title">
                                 <h3>Duration</h3>
                                 <p>{tripdetails[0].duration}</p>
@@ -46,7 +54,7 @@ function Annapurna() {
                         </div>
 
                         <div className="trek-dashboard-box">
-                            <i class="fa-solid fa-bowl-food"></i>
+                            <i className="fa-solid fa-bowl-food"></i>
                             <div className="trek-box-title">
                                 <h3>Meals</h3>
                                 <p>{tripdetails[0].meals}</p>
@@ -54,7 +62,7 @@ function Annapurna() {
                         </div>
 
                         <div className="trek-dashboard-box">
-                            <i class="fa-solid fa-cloud-sun-rain"></i>
+                            <i className="fa-solid fa-cloud-sun-rain"></i>
                             <div className="trek-box-title">
                                 <h3>Best Season</h3>
                                 <p>{tripdetails[0].bestseasion}</p>
@@ -63,7 +71,7 @@ function Annapurna() {
                         </div>
 
                         <div className="trek-dashboard-box">
-                            <i class="fa-solid fa-chart-simple"></i>
+                            <i className="fa-solid fa-chart-simple"></i>
                             <div className="trek-box-title">
                                 <h3>Max-Altitude</h3>
                                 <p>{tripdetails[0].maxaltitude}</p>
@@ -73,7 +81,7 @@ function Annapurna() {
 
 
                         <div className="trek-dashboard-box">
-                            <i class="fa-solid fa-person-hiking"></i>
+                            <i className="fa-solid fa-person-hiking"></i>
                             <div className="trek-box-title">
                                 <h3>Difficulti Level</h3>
                                 <p>{tripdetails[0].difficultlevel}</p>
@@ -83,7 +91,7 @@ function Annapurna() {
 
 
                         <div className="trek-dashboard-box">
-                            <i class="fa-solid fa-people-group"></i>
+                            <i className="fa-solid fa-people-group"></i>
                             <div className="trek-box-title">
                                 <h3>Group Size</h3>
                                 <p>{tripdetails[0].groupsize}</p>
@@ -93,7 +101,7 @@ function Annapurna() {
 
 
                         <div className="trek-dashboard-box">
-                            <i class="fa-regular fa-building"></i>
+                            <i className="fa-regular fa-building"></i>
                             <div className="trek-box-title">
                                 <h3>Accomodation</h3>
                                 <p>{tripdetails[0].accomodation}</p>
@@ -103,7 +111,7 @@ function Annapurna() {
 
 
                         <div className="trek-dashboard-box">
-                            <i class="fa-solid fa-location-dot"></i>
+                            <i className="fa-solid fa-location-dot"></i>
                             <div className="trek-box-title">
                                 <h3>Destination</h3>
                                 <p>{tripdetails[0].destination}</p>
@@ -132,11 +140,11 @@ function Annapurna() {
                     <div className="trek-list">
 
                         <ul className="trek-list-ul">
-                            <li><Link to="/annapurna/" className="trek-list-link">Overview</Link></li>
-                            <li><Link to="/annapurna/itinerary" className="trek-list-link">Itinerary</Link></li>
-                            <li><Link to="/annapurna/cost" className="trek-list-link">Cost</Link></li>
-                            <li><Link to="/annapurna/hotels" className="trek-list-link">Hotel</Link></li>
-                            <li><Link to="/annapurna/vehicles" className="trek-list-link">Vehicles</Link></li>
+                            <li><Link to="/annapurna/" className= {`header-link ${location.pathname==="/annapurna/" ? "active":""} `} >Overview</Link></li>
+                            <li><Link to="/annapurna/itinerary" className= {`header-link ${location.pathname==="/annapurna/itinerary" ? "active":""} `} >Itinerary</Link></li>
+                            <li><Link to="/annapurna/cost" className= {`header-link ${location.pathname==="/annapurna/cost" ? "active":""} `} >Cost</Link></li>
+                            <li><Link to="/annapurna/hotels" className= {`header-link ${location.pathname==="/annapurna/hotels"? "active":""} `} >Hotel</Link></li>
+                            <li><Link to="/annapurna/vehicles" className= {`header-link ${location.pathname==="/annapurna/vehicles" ? "active":""} `} >Vehicles</Link></li>
 
                         </ul>
 

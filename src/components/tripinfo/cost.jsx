@@ -24,7 +24,7 @@ function Cost() {
                         {costs.map((cost, index) => {
                             return (
 
-                                <tr>
+                                <tr className="table-cell">
                                     <td>{cost.gs}</td>
                                     <td>{cost.sp}</td>
                                     <td>{cost.dp}</td>

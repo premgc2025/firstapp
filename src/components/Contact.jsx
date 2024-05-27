@@ -38,8 +38,8 @@ function Contact() {
 
     }
     return (
-        <div className="contact-section">
-            <div className="contact-main">
+        <div className="contact-section bookingform-section">
+            <div className="contact-main ">
                 <h1>Quick Contact</h1>
 
                 <form action="https://api.web3forms.com/submit" method="POST" onSubmit={handleSubmit}>
@@ -52,11 +52,11 @@ function Contact() {
 
                         <div className="contact-commondiv">
                             <div className="contactNEP">
-                                <label htmlFor="nameid">Your Name (Full)</label>
+                                <label htmlFor="nameid"  className="contact-common-font">Your Name (Full)</label>
                                 <input type="text" className="contact-input-common" id="nameid" name="name" placeholder="Enter Your Full Name" onChange={handleInput} value={details.name} required />
                             </div>
                             <div className="contactNEP">
-                                <label htmlFor="emailid">Email address</label>
+                                <label htmlFor="emailid"  className="contact-common-font">Email address</label>
                                 <input type="email" id="emailid" className="contact-input-common" name="email" placeholder="Enter Email" onChange={handleInput} value={details.email} required />
                             </div>
                         </div>
@@ -64,18 +64,18 @@ function Contact() {
 
                         <div className="contact-commondiv">
                             <div className="contactNEP">
-                                <label htmlFor="phoneid">Phone</label>
+                                <label htmlFor="phoneid"  className="contact-common-font">Phone</label>
                                 <input type="text" id="phoneid" className="contact-input-common" name="phone" placeholder="Enter Your Phone Number" onChange={handleInput} value={details.phone} />
                             </div>
                             <div className="contactNEP">
-                                <label htmlFor="nationalityid">Country</label>
+                                <label htmlFor="nationalityid"  className="contact-common-font">Country</label>
                                 <input type="text" id="nationalityid" className="contact-input-common" name="nationalityid" placeholder="Enter Your Phone Number" onChange={handleInput} value={details.nationality} required />
                             </div>
                         </div>
 
 
                         <div className="additionalrequirement formdivmargin">
-                            <label htmlFor="additionalrequirementid">Message</label>
+                            <label htmlFor="additionalrequirementid"  className="contact-common-font">Message</label>
                             <textarea name="additionalrequirement" className="textareaAR" id="additionalrequirementid" cols="30" rows="7" onChange={handleInput} value={details.additionalrequirement}></textarea>
                         </div>
                     </div>

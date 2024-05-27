@@ -22,7 +22,7 @@ function Hotels() {
                         {hotels.map((hotel, index) => {
                             return (
 
-                                <tr>
+                                <tr className="table-cell">
                                     <td>{hotel.city}</td>
                                     <td>{hotel.s}</td>
                                     <td>{hotel.d}</td>

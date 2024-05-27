@@ -51,7 +51,7 @@ function Registration(){
                     <input type="password" placeholder="Enter new Password " name="password" className="input-form" onChange={handleInput} value={userDetails.password}/>
                     <input type="number" placeholder="Enter Your Age " name="age"  className="input-form" onChange={handleInput} value={userDetails.age}/>
                 
-                    <button className="registration-btn">Registration</button>
+                    <button className="registration-btn">Submit</button>
                     <p>Already Registered ? <Link to="/login" class="registration-link">Login</Link> </p>
                 </form>
                

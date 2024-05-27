@@ -9,7 +9,7 @@ function Tours() {
         { name: "Lumbini", image: "./img/Lumbini.jpeg", Duration: "6 Days", Price: "$1000",Description: "All Seasion", Read:"(Read More)" },     
         { name: "BhumeshworiTemple", image: "./img/Bhumeshwori Temple.JPG", Duration: "3 Hours", Price: "$100",Description: "All Seasion", Read:"(Read More)" },
         { name: "ViewTowerLowlang", image: "./img/ViewTower.JPG", Duration: "2-Hours", Price: "$100",Description: "All Seasion", Read:"(Read More)" },      
-        { name: "Manasulu-Gorkha", image: "./img/manaslu-1.jpeg", Duration: "7-Days", Price: "$900",Description: "March-June & Oct- Dec", Read:"(Read More)" },
+        { name: "Manaslu-Gorkha", image: "./img/manaslu-1.jpeg", Duration: "7-Days", Price: "$900",Description: "March-June & Oct- Dec", Read:"(Read More)" },
         { name: "Lukla", image: "./img/Lukla Airport.JPG", Duration: "3-Days", Price: "$1000",Description: "All Seasion", Read:"(Read More)" },
 
 

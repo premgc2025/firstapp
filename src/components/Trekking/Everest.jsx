@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
 
 
 function Everest() {
 
+  
 
     let [tripdetails, setTripdetails] = useState([
         {

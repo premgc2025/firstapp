@@ -21,7 +21,7 @@ function Vehicles() {
                         {vehicles.map((vehicle, index) => {
                             return (
 
-                                <tr>
+                                <tr className="table-cell">
                                     <td>{vehicle.persons}</td>
                                     <td>{vehicle.vt}</td>
                                     

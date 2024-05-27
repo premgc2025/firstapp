@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* background-color:#fccc45; Yello*/
 /* background-color: #003b91; Blue */
@@ -11,15 +12,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
- 
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
 }
 
 .header {
   width: 100%;
   height: 8rem;
-  background-color:#fccc45;
+  background-color: #fccc45;
   color: white;
-   /* opacity: .9; */
+  /* opacity: .9; */
   /* z-index: 3;   */
 }
 
@@ -42,45 +47,70 @@
 .header-link {
   color: white;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.3VW;
 }
-.header-logo{
+
+.header-link:hover {
+  color: black;
+}
+
+.header-logo {
   color: greenyellow;
 }
-.header-logo-span{
-  color:#fccc45;
+
+.header-logo-span {
+  color: #fccc45;
 }
 
 .logo>li {
   list-style-type: none;
 }
 
+.logo>li:hover {
+  background-color: lightgreen;
+  /* color: black; */
+}
+
 .nav-main-bar {
+  width: 30%;
   padding: 1rem 0;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: .3rem;
   /* column-gap: 1rem; */
 
 }
-.nav-main-bar>link{
-  color: white;
-  background-color: white;
-}
 
 .nav-main-bar>li {
-  width: 8%;
-  list-style-type: none; 
+  /* width: 8%; */
+  list-style-type: none;
 }
+
+.nav-main-linkdiv {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3px;
+
+}
+
+.nav-main-linkdiv>li {
+  list-style-type: none;
+}
+
+
 
 .logo {
   font-size: 1.5rem;
 }
 
 .nav-icon {
-  background-color:lightgreen;
-  width: 15%; 
+  background-color: lightgreen;
+  width: 15%;
 }
-
-
 
 .nav-bar-list {
   /* margin-right: 5%; */
@@ -96,13 +126,30 @@
 }
 
 .nav-bar-list>li:hover {
-  background-color: rgb(234, 206, 206);
-  transform: scale(1.1);
+  background-color: lightgreen;
+
 }
 
-.login {
-  /* width: 3%; */
+/* Burger bar*/
+.nav-toggle {
+  padding: .3rem;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  display: none;
+
 }
+
+.burger-bar {
+  padding: .1rem;
+  margin: .1rem;
+  width: 1.5rem;
+  background-color: whitesmoke;
+}
+
+/* .login {
+  width: 3%;
+} */
 
 .banner {
   margin: 0 0 2rem 0;
@@ -191,9 +238,9 @@
   display: flex;
 }
 
-.image-title:hover {
+/* .image-title:hover {
   transform: scale(1.1);
-}
+} */
 
 /* Torus and Trekking Middle Bar */
 .middlebar-section {
@@ -226,10 +273,10 @@
   text-decoration: none;
 }
 
-.middlebtn:hover,
+/* .middlebtn:hover,
 .middlebtn:active {
   background-color: rosybrown;
-}
+} */
 
 
 /* Treking */
@@ -242,9 +289,11 @@
   /* background-color: rgb(239, 236, 236); */
 
 }
-.readmore{
+
+.readmore {
   color: lightcoral;
 }
+
 .treking-main {
   padding: 0 5%;
   width: 100%;
@@ -371,17 +420,20 @@
   padding: 1rem 10%;
   /* background-color: #a0f2de; */
 }
-.aboutus-section{
+
+.aboutus-section {
   margin-bottom: 1rem;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   border: 2px soled lightgray;
   border-radius: 1.1rem;
 }
-.aboutus-section>h3{
+
+.aboutus-section>h3 {
   font-size: 1.5rem;
   padding: .5rem 0;
 }
-.aboutus-section>p{
+
+.aboutus-section>p {
   padding-left: 1rem;
   font-size: 1.1rem;
 }
@@ -395,27 +447,31 @@
 }
 
 /* Services */
-.services-header{
+.services-header {
   padding: 1rem 10%;
 
 }
-.services-section{
+
+.services-section {
   margin-bottom: 1.5rem;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   border: 2px soled lightgray;
   border-radius: 1.1rem;
 
 }
-.services-section>h3{
+
+.services-section>h3 {
   font-size: 1.5rem;
   padding: .5rem 0;
 
 }
-.services-section>p{
-  padding-left: 1rem; 
+
+.services-section>p {
+  padding-left: 1rem;
   font-size: 1.1rem;
 }
-.services-section>p>ul>li{
+
+.services-section>p>ul>li {
   padding: .3rem;
 }
 
@@ -492,14 +548,14 @@
 
 .overview-title {
   padding: .5rem;
- background-color:white;
+  background-color: white;
 }
 
 /* Itinerary */
 
 .itinerary-section {
   padding: .5rem;
- 
+
   border-radius: .3rem;
   background-color: white;
 }
@@ -512,7 +568,7 @@
 }
 
 .itinerary>h1 {
-  padding: .2rem ;
+  padding: .2rem;
   font-size: 1.2rem;
   width: max-content;
   background-color: #003b91;
@@ -522,7 +578,7 @@
 }
 
 .itinerary-detail {
-  padding: .5rem ;
+  padding: .5rem;
   background-color: whitesmoke;
   border: .5px solid lightgray;
   border-radius: .3rem;
@@ -541,8 +597,9 @@
   /* background-color: lightpink; */
   border-collapse: collapse;
 }
-.table-header>th{
-  background-color: lightgray; 
+
+.table-header>th {
+  background-color: lightgray;
 }
 
 th,
@@ -552,15 +609,19 @@ td {
   border: 1px solid gray;
   text-align: left;
 }
-.price-includes, .price-excludes{
-  padding: .5rem ;
+
+.price-includes,
+.price-excludes {
+  padding: .5rem;
 }
 
-.price-includes>h3, .price-excludes>h3{
+.price-includes>h3,
+.price-excludes>h3 {
   padding: .5rem 0;
 }
 
-.price-includes-li, .price-excludes-li{
+.price-includes-li,
+.price-excludes-li {
   list-style-type: none;
   padding: .3rem 0 0;
 }
@@ -597,8 +658,8 @@ Itinerary Data Display .tripinfo-dashboard {
 }
 
 .trek-header-section {
-  padding: 0 3%;
-  width: 100%;
+  padding: 3%;
+  width: 100VW;
   /* background-color: red; */
   display: flex;
   justify-content: center;
@@ -608,18 +669,16 @@ Itinerary Data Display .tripinfo-dashboard {
 .trek-main {
   width: 85%;
   /* background-color: gray; */
-
 }
 
 .trek-title {
   font-size: .8rem;
   /* background-color:  #003b91; */
   /* background-color: #ff7f35; */
-
- 
 }
-.trek-tilte-fontpage{
-  background-color:#fccc45;
+
+.trek-tilte-fontpage {
+  background-color: #fccc45;
 }
 
 .trek-image {
@@ -661,7 +720,8 @@ Itinerary Data Display .tripinfo-dashboard {
   width: 100%;
 
 }
-.trek-highlight>ul>h3{
+
+.trek-highlight>ul>h3 {
   padding-bottom: .5rem;
 }
 
@@ -684,16 +744,16 @@ Itinerary Data Display .tripinfo-dashboard {
   cursor: pointer;
 
 }
-.trek-list-link{
-  color:white;
+
+.trek-list-link {
+  color: white;
   text-decoration: none;
 
 }
 
 .trek-list-ul>li:hover {
-  border: 1px solid lightgreen;
-  border-radius: .3rem;
-  background-color:green;
+  background-color: lightgreen;
+
 }
 
 .outlet {
@@ -708,10 +768,11 @@ Itinerary Data Display .tripinfo-dashboard {
 .trek-banner-rightside {
   margin-top: 1.8rem;
   width: 15%;
- }
- .trek-banner-rightside-frontpage{
+}
+
+.trek-banner-rightside-frontpage {
   margin-top: 0;
- }
+}
 
 .trek-banner-rightside-main {
   background-color: whitesmoke;
@@ -725,10 +786,10 @@ Itinerary Data Display .tripinfo-dashboard {
 }
 
 .trek-banner-rightside-image {
-  height: 30%; 
+  height: 30%;
 }
 
-.trek-banner-rightside-bookingimage { 
+.trek-banner-rightside-bookingimage {
   width: 100%;
 }
 
@@ -739,9 +800,9 @@ Itinerary Data Display .tripinfo-dashboard {
   background-color: yellowgreen;
 }
 
-.banner-booknow:hover {
+/* .banner-booknow:hover {
   background-color: skyblue;
-}
+} */
 
 
 /* Booking Form */
@@ -753,6 +814,10 @@ Itinerary Data Display .tripinfo-dashboard {
 
 .bookingform-main {
   width: 70%;
+}
+.bookingform-main>h1{
+  font-size: 2.5VW;
+  font-weight: 500;
 }
 
 .bookingform-title {
@@ -767,6 +832,7 @@ Itinerary Data Display .tripinfo-dashboard {
   display: flex;
   flex-direction: column;
   font-size: 1.2rem;
+
 }
 
 .tripform {
@@ -793,12 +859,20 @@ Itinerary Data Display .tripinfo-dashboard {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .commonNEP {
   width: 30%;
   display: flex;
   flex-direction: column;
+}
+
+.form-common-font {
+  /* background-color: green; */
+  font-size: 1.2VW;
 }
 
 .arrivaldeparture {
@@ -845,39 +919,51 @@ Itinerary Data Display .tripinfo-dashboard {
 }
 
 /* Contact */
-.contact-section{
-  padding: 0 5% ;
-  width: 100%; 
-  display: flex;
-  flex-direction: column;  
-  margin-top: 2rem;
-}
-.contact-main{
-  width: 70%;
-  margin-bottom: 1rem;
-  
-}
-.contact-data{
-  width: 50%;
- 
-
-}
-.contact-commondiv{
-  width: 100%;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-  column-gap: 5rem;
-}
-.contactNEP{
+.contact-section {
+  padding: 0 5%;
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
+
 }
-.contact-input-common{
+
+.contact-main {
+  width: 70%;
+  margin-bottom: 1rem;
+
+
+}
+
+.contact-data {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+
+
+}
+
+.contact-commondiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+.contactNEP {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-input-common {
   height: 1.9rem;
   text-indent: .3rem;
- 
+
 }
 
 
@@ -942,13 +1028,23 @@ Itinerary Data Display .tripinfo-dashboard {
   border: 1px solid gray;
   border-radius: 1rem;
 }
+.registration-form>h1{
+  font-size: 1.5VW;
+  font-weight: 500;
+}
+.registration-form>p, .registration-form>p>link{
+  font-size: 1VW;
+  font-weight: 300;
+
+}
 
 .input-form {
   height: 2rem;
   border: 1px solid black;
   border-radius: .5rem;
 }
-.registration-link{
+
+.registration-link {
   color: lightgoldenrodyellow;
   text-decoration: none;
 }
@@ -959,84 +1055,100 @@ Itinerary Data Display .tripinfo-dashboard {
   background-color: royalblue;
   border: 1px solid royalblue;
   border-radius: .3rem;
+  font-size: 1.3VW;
+  color: white;
 
 }
 
 /* Footer Section */
-.footer-header{
+.footer-header {
   padding: .5rem 0;
   width: 100%;
-  background-color:  #003b95;;
-  position:relative;
+  background-color: #003b95;
+  ;
+  position: relative;
   bottom: 0;
 }
-.footer-section{
+
+.footer-section {
   /* background-color: red; */
 }
-.footer-banner{
+
+.footer-banner {
   padding: .5rem 5%;
   /* background-color: yellow; */
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.footer-body{
- 
-  color:whitesmoke;
+
+.footer-body {
+
+  color: whitesmoke;
   /* width: 25%; */
 }
-.footer-body>h3{
+
+.footer-body>h3 {
   padding-bottom: 1rem;
   font-size: 1.3rem;
   font-weight: 300;
 }
 
-.footer-common-div{
+.footer-common-div {
 
-  font-family:'Times New Roman', Times, serif; 
+  font-family: 'Times New Roman', Times, serif;
   display: flex;
- flex-direction: column;
- row-gap: .5rem;
+  flex-direction: column;
+  row-gap: .5rem;
 }
-.footer-common-div>li{
+
+.footer-common-div>li {
   list-style-type: none;
 }
-.footer-common-div>h3{
+
+.footer-common-div>h3 {
   font-size: 1rem;
   color: whitesmoke;
 
 }
-.footer-link{
+
+.footer-link {
   font-size: 1rem;
   color: whitesmoke;
   text-decoration: none;
 }
-.footer-button{
+
+.footer-button {
   padding: .3rem 5%;
-  background-color:#fccc45;;
+  background-color: #fccc45;
+  ;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 
+
 /* Why Choose Us */
-.whychooseus-header{
+.whychooseus-header {
   padding: .5rem 5%;
-  background-color:whitesmoke;
+  background-color: whitesmoke;
   border: 2px solid whitesmoke;
   border-radius: .3rem;
 }
-.whychooseus-section>h2{
-  color:#003b91 ;
+
+.whychooseus-section>h2 {
+  color: #003b91;
 }
-.whychooseus-header{
+
+.whychooseus-header {
   display: flex;
   flex-direction: column;
   text-align: center;
-  
+
 }
-.whychooseus-body{
+
+.whychooseus-body {
   margin-top: 1.5rem;
   padding-bottom: 1rem;
   display: flex;
@@ -1044,5 +1156,318 @@ Itinerary Data Display .tripinfo-dashboard {
   column-gap: 3rem;
   row-gap: 1rem;
 }
+
+.whychooseus-body>h3 {
+  font-size: 1.1rem;
+}
+
 /* background-color:#fccc45; Yello*/
 /* background-color: #003b91; Blue */
+
+/* Active  button*/
+.active {
+  background-color: lightgreen;
+  color: black;
+}
+
+@media (max-width:600px) {
+  * {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 250;
+    font-style: normal;
+  }
+
+
+  .header {
+    margin: 0;
+    padding: 0;
+    height: 11vh;
+  }
+
+  .header-main {
+    height: 9vh;
+    position: fixed;
+  }
+
+  .nav-bar-top {
+    padding:0 5%;
+    margin-top: 5px;
+    padding-top: .3rem;
+  }
+
+  .nav-bar-list {
+
+    margin-bottom: .1rem;
+    display: none;
+  }
+
+  .header-link {
+    width: fit-content;
+    font-size: 2.9VW;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .nav-active {
+    background-color: #261d07;
+    width: max-content;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+   row-gap: .3rem;
+    position: fixed;
+    top: 2.2rem;
+    right: 10%;
+    border: 1px solid black;
+    border-radius: .5rem;
+    color: #003b91;
+
+  }
+
+  .nav-toggle {
+    padding: .3rem;
+    background-color: green;
+    display: flex;
+  }
+
+  .nav-main-bar {
+    width: 50%;
+    padding: 0 5%;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+
+  }
+
+  .nav-icon{
+    width: 2VW;
+    background-color: green;
+  }
+  .nav-main-linkdiv>h2{
+    /* background-color: red; */
+    font-size: 3VW;
+
+  }
+
+  .banner-image {
+    height: 15vh;
+  }
+
+  .treking {
+    position: relative;
+    /* background: yellowgreen; */
+  }
+
+  .treking-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .trekingpakage {
+    width: 45%;
+  }
+
+  .button-pre-next-treking {
+    /* background-color: red; */
+    display: flex;
+    position: relative;
+    position: absolute;
+    top: 45%;
+  }
+
+  .btnicon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /* Trek Main Body */
+  .trek-header,
+  .trek-header-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trek-title>h1,
+  .trek-itinerary>h2,
+  .trek-highlight>ul>h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .trek-itinerary-dashboard {
+    width: 90VW;
+    display: flex;
+    column-gap: 1rem;
+    row-gap: .1rem;
+    flex-wrap: wrap;
+  }
+
+  .trek-dashboard-box {
+    width: 40VW;
+  }
+
+  .trek-image-banner {
+
+    height: 15VH;
+  }
+
+
+  .trek-tilte-fontpage,
+  .trek-title {
+    width: 90VW;
+  }
+
+  .trek-header-section {
+    padding: 0;
+    position: relative;
+  }
+
+  .trek-main,
+  .trek-banner-rightside {
+    padding: 0 5%;
+    width: 100VW;
+
+  }
+
+
+
+  .trek-list-ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .trek-list-ul>li {
+    font-size: 5VW;
+  }
+
+  .table {
+    width: 83VW;
+  }
+
+  .table-header>th {
+    font-size: 3VW;
+
+  }
+
+  .table-cell>td {
+    font-size: 2.4VW;
+  }
+
+  /* Footer */
+  .footer-header,
+  .footer-banner {
+    padding: .9VW;
+  }
+
+  .footer-body>h3 {
+    font-size: 3.9VW;
+  }
+
+  .footer-common-div>h3,
+  .footer-link {
+    font-size: 3.5VW;
+  }
+
+  .footer-button>h4 {
+    font-size: 3.6VW;
+  }
+
+  /* .bookingform-main{
+    width: 100VW;
+    padding: 0 5%;
+    background-color: greenyellow;
+   
+  } */
+  .bookingform-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .bookingform-main>h1{
+    font-size: 4VW;
+    font-weight: 500;
+  
+  }
+
+  .form-common-font {
+    font-size: 2.5VW;
+    font-weight: 500;
+  }
+
+  /* Contact form */
+  .contact-main {
+    width: 100%;
+  }
+
+  .contact-data {
+    width: 100%;
+  }
+
+  .contact-main>h1 {
+    font-size: 4VW;
+    font-weight: 500;
+  }
+
+  .contact-commondiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+  }
+
+  .contactNEP {
+    width: 100%;
+
+    margin-bottom: .5rem;
+  }
+  .contact-common-font{
+    font-size: 3.5VW;
+    font-weight: 500;
+  }
+
+  /* Why Choose US */
+  .whychooseus-body {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+  }
+
+  /* Login */
+
+  .registration-form {
+    padding: 5rem .5rem;
+    width: 70%;
+    /* height: 20rem; */
+    /* display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    background-color: #003b91;
+    color: whitesmoke;
+    border: 1px solid gray;
+    border-radius: 1rem; */
+  }
+  .registration-form>h1{
+    font-size: 3.5VW;
+    font-weight: 500;
+  }
+  .registration-form>p, .registration-form>p>link{
+    font-size: 2.9VW;
+    font-weight: 300;
+  
+  }
+ 
+  .registration-btn {
+  
+    font-size: 2.9VW;
+    color: white;
+  
+  }
+}
